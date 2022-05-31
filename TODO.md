@@ -1,0 +1,1 @@
+* default maiacore cover image

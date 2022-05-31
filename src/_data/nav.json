@@ -1,0 +1,10 @@
+[
+    {
+        "name": "home",
+        "link": "/"
+    },
+    {
+        "name": "sample packs",
+        "link": "/samples/"
+    }
+]

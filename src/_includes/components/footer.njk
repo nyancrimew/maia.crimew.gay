@@ -1,0 +1,14 @@
+<footer>
+    <div>
+        {% for item in footer.links %}
+            <span><a href="{{ item.link }}" rel="me"  target="_blank">{{ item.name }}</a></span>
+            {% if not loop.last %}
+                <span>|</span>
+            {% endif %}
+        {% endfor %}
+    </div>
+    <div>
+        <p><small>i am going to add fun badges here eventually but i was too lazy to do so today</small></p>
+    </div>
+    <script src="https://lavender.software/webring/webring-{{ site.webring.version }}.js" data-site-id="{{ site.webring.siteId }}"></script>
+</footer>

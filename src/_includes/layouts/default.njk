@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{ site.language }}">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ title if title else site.title }}</title>
+    
+    <link rel="stylesheet" href="/style.css"/>
+
+    <meta name="description" content="{{ description if description else site.description }}" />
+    <meta name='keywords' content='{% if tags %}{{ tags }},{% endif %}{{ site.tags }}'>
+    <meta property="og:title" content="{{ title if title else site.title }}">
+    <meta property="og:description" content="{{ description if description else site.description }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:image" content="{% if feature_image %}{{ site.url }}{{ feature_image }}{% else %}{{ site.url }}/img/cover.jpg{% endif %}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta name="article:author" content="{{ site.name }}">
+    {% if date %}<meta name="article:published_time" content="{{ date | date_to_datetime }}">{% endif %}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="{{ site.twitter }}">
+    <meta name="twitter:creator" content="{{ site.twitter }}">
+    <meta name="theme-color" content="#eca9cb">
+  </head>
+  <body>
+    <header>
+      <h1>maia <sub>{{ subhead if subhead else "arson crimew" }}</sub></h1>
+      {% include "components/navigation.njk" %}
+    </header>
+    <div id="content">
+      {% block content %}{% endblock %}
+    </div>
+    {% include "components/footer.njk" %}
+  </body>
+</html>

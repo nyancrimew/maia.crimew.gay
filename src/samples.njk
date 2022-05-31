@@ -1,0 +1,17 @@
+---
+permalink: /samples/index.html
+subhead: sample packs
+---
+{% extends 'layouts/default.njk' %}
+{% block content %} 
+    <p>here are some sample packs i made!</p>
+    <div>
+      <ul>
+        {% for pack in samplepacks %}
+        <li>
+          <a href="/samples/{{ pack.filename }}"><code>{{ pack.filename }}</code></a> <small title="{{ pack.changes }}">({{ pack.version }})</small> - {{ pack.description }} 
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+{% endblock %}
