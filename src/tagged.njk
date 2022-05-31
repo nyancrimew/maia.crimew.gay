@@ -9,7 +9,7 @@ pagination:
   filter: 
     - posts
   addAllPagesToCollections: true
-permalink: /posts/tagged/{{ tag }}/index.html
+permalink: /posts/tagged/{{ tag | slugify }}/index.html
 ---
 {% extends 'layouts/default.njk' %}
 {% block main %}

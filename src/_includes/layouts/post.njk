@@ -14,7 +14,7 @@ subhead: blog
                 {% if tags %}
                     <span>in 
                         {% for tag in tags %}
-                            <span class="tag"><a href="/posts/tagged/{{ tag }}/">{{ tag }}</a></span>{% if not loop.last %}, {% endif %}
+                            <span class="tag"><a href="/posts/tagged/{{ tag | slugify }}/">{{ tag }}</a></span>{% if not loop.last %}, {% endif %}
                         {% endfor %}
                     </span>
                 {% endif %}
