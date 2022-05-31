@@ -40,16 +40,19 @@ footer,
   font-size: 0.75rem;
 }
 
-time, .author {
+time,
+.author {
   font-weight: bold;
 }
 
-.article_header {
+.article_header,
+.page_header {
   padding-bottom: 4px;
   border-bottom: 1px dotted rgb(219, 103, 167);
 }
 
-.article_header > h1 {
+.article_header > h1,
+.page_header > h1 {
   margin: 0.1rem;
 }
 

@@ -1,0 +1,27 @@
+---
+eleventyComputed:
+  title: posts tagged "{{ tag }}"
+subhead: blog
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter: 
+    - posts
+  addAllPagesToCollections: true
+permalink: /posts/tagged/{{ tag }}/index.html
+---
+{% extends 'layouts/default.njk' %}
+{% block main %}
+        <header class="page_header">
+            <h1>posts tagged "{{ tag }}"</h1>
+        </header>
+  <ul>
+    {% set taglist = collections[ tag ] %}
+    {% for entry in taglist | reverse %}
+    <li>
+      <span><a href="{{ entry.url }}">{{ entry.data.title }}</a> on <span><time datetime="{{ entry.date | date_to_datetime }}">{{ entry.date | date_formatted }}</time></span></span>
+    </li>
+    {% endfor %}
+  </ul>
+{% endblock %}
