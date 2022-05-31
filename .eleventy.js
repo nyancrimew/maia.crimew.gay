@@ -1,3 +1,5 @@
+const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
+
 module.exports = function (eleventyConfig) {
   const parseDate = (str) => {
     if (str instanceof Date) {
@@ -7,7 +9,9 @@ module.exports = function (eleventyConfig) {
   };
 
   const formatPart = (part, date) =>
-    new Intl.DateTimeFormat("en", part).format(date);
+  new Intl.DateTimeFormat("en", part).format(date);
+
+  eleventyConfig.addPlugin(syntaxHighlight)
 
   eleventyConfig.addPassthroughCopy({ "src/static": "/" });
 

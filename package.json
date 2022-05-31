@@ -1,0 +1,13 @@
+{
+    "name": "maia.crimew.gay",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "build": "rm -rf www && eleventy",
+        "serve": "rm -rf www && eleventy --serve"
+    },
+    "dependencies": {
+        "@11ty/eleventy": "^1.0.1",
+        "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0"
+    }
+}

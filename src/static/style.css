@@ -53,6 +53,14 @@ time, .author {
   margin: 0.1rem;
 }
 
+img {
+  max-width: 75%;
+}
+
+.tag {
+  font-weight: bold;
+}
+
 .lavender-webring-container {
   all: unset;
   display: flex;
