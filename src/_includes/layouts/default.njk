@@ -21,12 +21,12 @@
     <meta name="theme-color" content="#eca9cb">
   </head>
   <body>
-    <header>
+    <header id="site_header">
       <h1>maia <sub>{{ subhead if subhead else "arson crimew" }}</sub></h1>
       {% include "components/navigation.njk" %}
     </header>
     <div id="content">
-      {% block content %}{% endblock %}
+      {% block main %}{% endblock %}
     </div>
     {% include "components/footer.njk" %}
   </body>

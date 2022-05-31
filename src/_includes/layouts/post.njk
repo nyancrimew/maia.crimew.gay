@@ -1,0 +1,16 @@
+---
+subhead: blog
+---
+{% extends 'layouts/default.njk' %}
+{% block main %}
+    <article>
+        <header class="article_header">
+            <div class="byline">
+                <time datetime="{{date | date_to_datetime }}">{{ date | date_formatted }}</time>
+                <span>by <span class="author by" id="author">{{ site.name }}</span></span>
+            </div>
+            <h1>{{ title }}</h1>
+        </header>
+        {{ content | safe }}
+    </article>
+{% endblock %}

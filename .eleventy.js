@@ -3,16 +3,32 @@ module.exports = function (eleventyConfig) {
     if (str instanceof Date) {
       return str;
     }
-    const date = DateTime.fromISO(str, { zone: "utc" });
-    return date.toJSDate();
+    return Date.parse(str);
   };
+
+  const formatPart = (part, date) =>
+    new Intl.DateTimeFormat("en", part).format(date);
 
   eleventyConfig.addPassthroughCopy({ "src/static": "/" });
 
   eleventyConfig.addFilter("date_to_datetime", (obj) => {
     const date = parseDate(obj);
-    return DateTime.fromJSDate(date).toUTC().toISO();
+    return date.toISOString();
   });
+
+  eleventyConfig.addFilter("date_formatted", (obj) => {
+    const date = parseDate(obj);
+
+    const month = formatPart({ month: "short" }, date);
+    const day = formatPart({ day: "numeric" }, date);
+    const year = formatPart({ year: "numeric" }, date);
+
+    return `${month} ${day}, ${year}`;
+  });
+
+  eleventyConfig.addCollection('posts', collection => {
+    return collection.getFilteredByGlob('src/posts/*.md').reverse()
+  })
 
   return {
     templateFormats: ["njk", "md", "html"],

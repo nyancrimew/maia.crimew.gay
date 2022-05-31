@@ -1,15 +1,16 @@
 ---
-permalink: /samples/index.html
+title: maia sample packs :3
 subhead: sample packs
+permalink: /samples/index.html
 ---
 {% extends 'layouts/default.njk' %}
-{% block content %} 
+{% block main %} 
     <p>here are some sample packs i made!</p>
     <div>
       <ul>
         {% for pack in samplepacks %}
         <li>
-          <a href="/samples/{{ pack.filename }}"><code>{{ pack.filename }}</code></a> <small title="{{ pack.changes }}">({{ pack.version }})</small> - {{ pack.description }} 
+          <a href="/samples/{{ pack.filename }}"><code>{{ pack.filename }}</code></a> <sup title="{{ pack.changes }}">({{ pack.version }})</sup> - {{ pack.description }} 
         </li>
         {% endfor %}
       </ul>

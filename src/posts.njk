@@ -1,0 +1,21 @@
+---
+title: maia blog :3
+subhead: blog
+pagination:
+  data: collections.posts
+  addAllPagesToCollections: true
+  size: 10
+permalink: /posts/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber }}/{% endif %}index.html
+---
+{% extends 'layouts/default.njk' %}
+{% block main %}
+  <ul>
+    {% for entry in pagination.items %}
+    <li>
+      <span><a href="{{ entry.url }}">{{ entry.data.title }}</a> on <span><time datetime="{{ entry.data.date | date_to_datetime }}">{{ entry.data.date | date_formatted }}</time></span></span>
+    </li>
+    {% endfor %}
+  </ul>
+
+  {% include "components/pagination.njk" %}
+{% endblock %}

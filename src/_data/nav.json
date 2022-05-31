@@ -4,6 +4,10 @@
         "link": "/"
     },
     {
+        "name": "blog",
+        "link": "/posts/"
+    },
+    {
         "name": "sample packs",
         "link": "/samples/"
     }

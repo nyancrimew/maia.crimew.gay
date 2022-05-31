@@ -1,0 +1,17 @@
+<nav>
+    {% if pagination.nextPageLink -%}
+        {% set nextPageNumber = pagination.pageNumber + 1 %}
+        {% set nextPageLink = 'page/' ~ nextPageNumber %}
+        <a href="/{{ page.fileSlug }}/{{ nextPageLink }}" rel="prev">Older</a>
+    {%- endif %}
+
+    {% if pagination.previousPageLink -%}
+        {% set previousPageNumber = pagination.pageNumber - 1 %}
+        {%- if pagination.pageNumber == 1 -%}
+            {% set previousPageLink = '' %}
+        {%- else -%}
+            {% set previousPageLink = 'page/' ~ previousPageNumber %}
+        {%- endif -%}
+        <a href="/{{ page.fileSlug }}/{{ previousPageLink }}" rel="next">Newer</a>
+    {%- endif %}
+</nav>

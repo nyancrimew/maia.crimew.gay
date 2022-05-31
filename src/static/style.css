@@ -12,7 +12,7 @@ li.lavender-webring-curr-site > a {
   color: rgb(195, 0, 255);
 }
 
-header {
+#site_header {
   padding-bottom: 5px;
   border-bottom: 1px solid rgb(255, 0, 140);
 }
@@ -22,8 +22,8 @@ footer {
   border-top: 1px solid rgb(255, 0, 140);
 }
 
-header,
 footer,
+#site_header,
 .lavender-webring-container {
   text-align: center;
 }
@@ -34,6 +34,23 @@ footer,
   margin-right: auto;
   padding-top: 2em;
   padding-bottom: 2em;
+}
+
+.byline {
+  font-size: 0.75rem;
+}
+
+time, .author {
+  font-weight: bold;
+}
+
+.article_header {
+  padding-bottom: 4px;
+  border-bottom: 1px dotted rgb(219, 103, 167);
+}
+
+.article_header > h1 {
+  margin: 0.1rem;
 }
 
 .lavender-webring-container {
