@@ -4,7 +4,8 @@
     "description": "",
     "scripts": {
         "build": "rm -rf www && eleventy",
-        "serve": "rm -rf www && eleventy --serve"
+        "serve": "rm -rf www && eleventy --serve",
+        "update": "git pull && npm run build"
     },
     "dependencies": {
         "@11ty/eleventy": "^1.0.1",
