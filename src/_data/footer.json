@@ -24,5 +24,63 @@
       "name": "gitted tea",
       "link": "https://git.lavender.software/nyancrimew"
     }
+  ],
+  "badges": [
+    {
+      "badge": "maia.crimew.gay.png",
+      "title": "my site :3",
+      "alt": "maia crimew",
+      "link": "https://maia.crimew.gay"
+    },
+    {
+      "badge": "88x31.gif",
+      "title": "baaaadges",
+      "alt": "88x31",
+      "link": "https://cyber.dabamos.de/88x31"
+    },
+    {
+      "badge": "noclick.gif",
+      "title": "don't do it",
+      "alt": "don't click here",
+      "link": "javascript:alert('what did i tell you??')"
+    },
+    {
+      "badge": "acab.gif",
+      "title": "fuck the cops",
+      "alt": "acab"
+    },
+    {
+      "badge": "archlinux.gif",
+      "title": "i use arch btw",
+      "alt": "arch linux",
+      "link": "https://archlinux.org"
+    },
+    {
+      "badge": "versarytown.png",
+      "title": "a very cool website by a very cool person <3",
+      "alt": "versary town",
+      "link": "https://versary.town"
+    },
+    {
+      "badge": "goop.gif",
+      "title": "goop house next up",
+      "alt": "goop house",
+      "link": "https://goop.house"
+    },
+    {
+      "badge": "anarchynow.gif",
+      "alt": "anarchy now"
+    },
+    {
+      "badge": "sleepy.png",
+      "title": "sleepy.zone is the best internet radio out there",
+      "alt": "sleepy zone",
+      "link": "https://sleepy.zone"
+    },
+    {
+      "badge": "kitten88.gif",
+      "title": "im a kitten fr fr",
+      "alt": "kitten's corner"
+    }
   ]
 }

@@ -7,8 +7,10 @@
             {% endif %}
         {% endfor %}
     </div>
-    <div>
-        <p><small>i am going to add fun badges here eventually but i was too lazy to do so today</small></p>
+    <div class="badges">
+        {% for item in footer.badges %}
+            {% if item.link %}<a href="{{ item.link }}" target="_blank">{% endif %}<img src="/badges/{{ item.badge }}" alt="{{ item.alt }}" {% if item.title %}title="{{ item.title }}"{% endif %}>{% if item.link %}</a>{% endif %}
+        {% endfor %}
     </div>
     <script src="https://lavender.software/webring/webring-{{ site.webring.version }}.js" data-site-id="{{ site.webring.siteId }}"></script>
 </footer>
