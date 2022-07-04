@@ -81,6 +81,19 @@
       "badge": "kitten88.gif",
       "title": "im a kitten fr fr",
       "alt": "kitten's corner"
+    },
+    {
+      "badge": "oatzone.gif",
+      "alt": "oat.zone",
+      "link": "https://oat.zone"
+    },
+    {
+      "badge": "slimesnow.png",
+      "alt": "slimes now"
+    },
+    {
+      "badge": "slugcat.png",
+      "alt": "slugcat"
     }
   ]
 }
