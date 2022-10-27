@@ -19,7 +19,16 @@ li.lavender-webring-curr-site > a {
 
 footer {
   padding-top: 5px;
-  border-top: 1px solid rgb(255, 0, 140);
+}
+
+.footer-kitten {
+  height: 88px;
+  border-bottom: 1px solid rgb(255, 0, 140);
+  margin-bottom: 5px;
+}
+
+.footer-kitten > img {
+  height: 88px;
 }
 
 footer,
