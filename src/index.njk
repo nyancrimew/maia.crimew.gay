@@ -3,13 +3,19 @@ permalink: /index.html
 ---
 {% extends 'layouts/default.njk' %}
 {% block main %} 
+<div style="display: flex; flex-wrap: wrap; justify-content: center;">
+  <div style="flex-grow: 1; flex-shrink: 1; flex-basis: 30%; min-width: 200px; max-width: 70%;">
+    <img src="/img/kitten_cropped.png" alt="a drawing of a small white kitten with black spots sitting and looking at you">
+  </div>
+  <div style="flex-grow: 2; flex-shrink: 2; flex-basis: 60%;">
     <p>
-      hello i am {{ site.name }} <sup>({{ site.pronouns }})</sup> and i am gay for girls,
-      also i do okay enough puter things and mediocre music things.
+      hello i am {{ site.name }} <sup>({{ site.pronouns }})</sup> and i am gay, mostly for girls, and i'm a tiny kitten.
     </p>
-    <p>here is one of my favorite gifs:</p>
-    <img
-      src="/img/cat-explosion.gif"
-      alt="an very cool cat in front of an explosion"
-    />
+    <p>
+      i know lot's of things about cyber security, programming and far too little about music but i still
+      try to do all those things at once. if you like the things i do here or on social media you can
+      <a href="https://ko-fi.com/nyancrimew">support me on ko-fi</a>.
+    </p>
+  </div>
+</div>
 {% endblock %}
