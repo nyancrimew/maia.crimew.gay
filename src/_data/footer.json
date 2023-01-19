@@ -94,6 +94,26 @@
     {
       "badge": "slugcat.png",
       "alt": "slugcat"
+    }, 
+    {
+      "badge": "sinewave.gif",
+      "alt": "sinewave",
+      "link": "https://sinewave.cyou"
+    },
+    {
+      "badge": "nonbinary.png",
+      "alt": "non-binary pride",
+      "title": "im non binary fr fr"
+    }, 
+    {
+      "badge": "queer.png",
+      "alt": "queer pride",
+      "title": "im queeeer as fuck"
+    },
+    {
+      "badge": "piracy.gif",
+      "alt": "piracy now",
+      "title": "piracy is swag and you should do it"
     }
   ]
 }
