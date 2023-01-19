@@ -12,7 +12,7 @@ feature_image: /img/posts/how-to-hack-an-airline/cover.jpg
 feature_alt: "a glitchy edited photo of an airplane"
 ---
 
-> note: this is a slightly more technical* and comedic write up of the story covered by my friends over at dailydot, which you can read [here]()
+> note: this is a slightly more technical* and comedic write up of the story covered by my friends over at dailydot, which you can read [here](https://www.dailydot.com/debug/no-fly-list-us-tsa-unprotected-server-commuteair/)
 
 > <small>*i say slightly since there isnt a whole lot of complicated technical stuff going on here in the first place</small>
 
