@@ -18,7 +18,7 @@ feature_alt: "a glitchy edited photo of an airplane"
 
 ## step 1: boredom
 
-like so many other of my hacks this story starts with me being bored and browsing [shodan](https://shodan.io) (or well, technically [zoomeye](https://www.zoomeye.org), chinese shodan), looking for exposed jenkins servers that may contain some interesting goods. at this point i've probably clicked through about 20 boring exposed servers with very little of any interest, when i suddenly start seeing some familar words. "[ACARS](https://en.wikipedia.org/wiki/ACARS)", lots of mentions of "crew" and so on. lots of words i've heard before, most likely while binge watching [Mentour Pilot](https://youtube.com/c/MentourPilotaviation) YouTube videos. jackpot. an exposed jenkins server belonging to [CommuteAir](https://en.wikipedia.org/wiki/CommuteAir).
+like so many other of my hacks this story starts with me being bored and browsing [shodan](https://shodan.io) (or well, technically [zoomeye](https://www.zoomeye.org), chinese shodan), looking for exposed [jenkins](https://jenkins.io) servers that may contain some interesting goods. at this point i've probably clicked through about 20 boring exposed servers with very little of any interest, when i suddenly start seeing some familar words. "[ACARS](https://en.wikipedia.org/wiki/ACARS)", lots of mentions of "crew" and so on. lots of words i've heard before, most likely while binge watching [Mentour Pilot](https://youtube.com/c/MentourPilotaviation) YouTube videos. jackpot. an exposed jenkins server belonging to [CommuteAir](https://en.wikipedia.org/wiki/CommuteAir).
 
 ![zoomeye search for x-jenkins](/img/posts/how-to-hack-an-airline/zoomeye.jpg)
 
@@ -30,9 +30,9 @@ ok but let's not get too excited too quickly. just because we have found a funky
 
 most of the projects here seem to be fairly small spring boot projects. the standardized project layout and extensive use of the resources directory for configuration files will be very useful in this whole endeavour. 
 
-the very first project i decide to look at in more detail is something about "ACARS incoming", since ive heard the term acars before, and it sounds spicy. a quick look at the resource directory reveals a file called `application-prod.properties` (same also for -dev and -uat). it couldn't just be that easy now, could it?
+the very first project i decide to look at in more detail is something about "ACARS incoming", since ive heard the term acars before, and it sounds spicy. a quick look at the resource directory reveals a file called `application-prod.properties` (same also for `-dev` and `-uat`). it couldn't just be that easy now, could it?
 
-well, it sure is! two minutes after finding said file im staring at filezilla connected to a navtech sftp server filled with incoming and outgoing ACARS messages. this aviation shit really do get serious.
+well, it sure is! two minutes after finding said file im staring at [filezilla](https://filezilla-project.org/) connected to a [navtech](https://www.navblue.aero/) sftp server filled with incoming and outgoing ACARS messages. this aviation shit really do get serious.
 
 ![a photo of a screen showing filezilla navigated to a folder called ForNavtech/ACARS_IN full of acars messages, the image is captioned like a meme with "this aviation shit get serious"](/img/posts/how-to-hack-an-airline/this-aviation-shit-get-serious.jpg)
 
@@ -49,7 +49,7 @@ i however kept looking back at the two projects named `noflycomparison` and `nof
 
 ![heavily redacted example of a config file from one of the repositories](/img/posts/how-to-hack-an-airline/config-example.jpg)
 
-fast forward a few hours and im now talking to [Mikael Thalen](https://twitter.com/MikaelThalen), a staff writer at dailydot. i give him a quick rundown of what i have found so far and how in the meantime, just half an hour before we started talking, i have ended up finding AWS credentials. i now seemingly have access to pretty much their entire aws infrastructure via aws-cli. numerous s3 buckets, dozens of dynamodb tables, as well as various servers and much more. commute really loves aws.
+fast forward a few hours and im now talking to [Mikael Thalen](https://twitter.com/MikaelThalen), a staff writer at dailydot. i give him a quick rundown of what i have found so far and how in the meantime, just half an hour before we started talking, i have ended up finding AWS credentials. i now seemingly have access to pretty much their entire aws infrastructure via `aws-cli`. numerous s3 buckets, dozens of dynamodb tables, as well as various servers and much more. commute really loves aws.
 
 ![two terminal screenshots composed together showing some examples of aws buckets and dynamodb tables](/img/posts/how-to-hack-an-airline/aws-overview.jpg)
 
