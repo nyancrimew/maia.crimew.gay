@@ -1,6 +1,10 @@
 {
   "links": [
     {
+      "name": "rss feed",
+      "link": "https://crimew.gay/feed.xml"
+    },
+    {
       "name": "birded site",
       "link": "https://twitter.com/_nyancrimew"
     },
