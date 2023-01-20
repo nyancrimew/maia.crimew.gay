@@ -118,6 +118,12 @@
       "badge": "piracy.gif",
       "alt": "piracy now",
       "title": "piracy is swag and you should do it"
+    },
+    {
+      "badge": "utsuhorocks.png",
+      "alt": "utsuho rocks",
+      "title": "utsuho rocks",
+      "link": "https://utsuho.rocks"
     }
   ]
 }
