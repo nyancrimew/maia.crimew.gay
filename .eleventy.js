@@ -18,9 +18,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/static": "/" });
 
   eleventyConfig.addFilter("date_to_datetime", (obj) => {
-    console.log(obj);
     const date = parseDate(obj);
-    console.log(date);
     return date.toISOString();
   });
 
