@@ -10,6 +10,7 @@ pagination:
     - posts
   addAllPagesToCollections: true
 permalink: /posts/tagged/{{ tag | slugify }}/index.html
+date: git Last Modified
 ---
 {% extends 'layouts/default.njk' %}
 {% block main %}
@@ -20,7 +21,7 @@ permalink: /posts/tagged/{{ tag | slugify }}/index.html
     {% set taglist = collections[ tag ] %}
     {% for entry in taglist | reverse %}
     <li>
-      <span><a href="{{ entry.url }}">{{ entry.data.title }}</a> on <span><time datetime="{{ entry.date | date_to_datetime }}">{{ entry.date | date_formatted }}</time></span></span>
+      <span><a href="{{ entry.url }}">{{ entry.data.title }}</a> on <span><time datetime="{{ entry.page.date | date_to_datetime }}">{{ entry.page.date | date_formatted }}</time></span></span>
     </li>
     {% endfor %}
   </ul>

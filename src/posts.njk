@@ -12,7 +12,7 @@ permalink: /posts/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumbe
   <ul>
     {% for entry in pagination.items %}
     <li>
-      <span><a href="{{ entry.url }}">{{ entry.data.title }}</a> on <span><time datetime="{{ entry.data.date | date_to_datetime }}">{{ entry.data.date | date_formatted }}</time></span></span>
+      <span><a href="{{ entry.url }}">{{ entry.data.title }}</a> on <span><time datetime="{{ entry.page.date | date_to_datetime }}">{{ entry.page.date | date_formatted }}</time></span></span>
     </li>
     {% endfor %}
   </ul>

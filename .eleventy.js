@@ -1,5 +1,5 @@
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
-const pluginRss = require('@11ty/eleventy-plugin-rss')
+const pluginRss = require('@11ty/eleventy-plugin-rss');
 
 module.exports = function (eleventyConfig) {
   const parseDate = (str) => {
@@ -18,7 +18,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/static": "/" });
 
   eleventyConfig.addFilter("date_to_datetime", (obj) => {
+    console.log(obj);
     const date = parseDate(obj);
+    console.log(date);
     return date.toISOString();
   });
 
@@ -31,6 +33,10 @@ module.exports = function (eleventyConfig) {
 
     return `${month} ${day}, ${year}`;
   });
+
+  eleventyConfig.addFilter('urlescape', str => {
+    return str.split('/').map(part => encodeURI(part)).join('/')
+  })
 
   eleventyConfig.addCollection('posts', collection => {
     return collection.getFilteredByGlob('src/posts/*.md').reverse()

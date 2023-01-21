@@ -1,0 +1,11 @@
+---
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {% for entry in collections.all %}{% if "sitemap" not in entry.url and "robots.txt" not in entry.url and (not entry.data.tags or "hidden" not in entry.data.tags) %}
+    <url>
+        <loc>{{ site.url }}{{ entry.url | urlescape }}</loc>
+        {% if entry.data.changed_date or entry.page.date %}<lastmod>{% if entry.data.changed_date %}{{ entry.data.changed_date | date_to_datetime }}{% else %}{{ entry.page.date | date_to_datetime }}{% endif %}</lastmod>{% endif %}
+    </url>{% endif %}{% endfor %}
+</urlset> 

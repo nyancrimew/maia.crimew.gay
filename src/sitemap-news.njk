@@ -1,0 +1,19 @@
+---
+permalink: /sitemap-news.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+    {% for entry in collections.posts %}
+    <url>
+        <loc>{{ site.url }}{{ entry.url | urlescape }}</loc>{% if "hidden" not in entry.data.tags %}
+        {% if entry.data.changed_date or entry.page.date %}<lastmod>{% if entry.data.changed_date %}{{ entry.data.changed_date | date_to_datetime }}{% else %}{{ entry.page.date | date_to_datetime }}{% endif %}</lastmod>{% endif %}
+        <news:news> 
+            <news:publication> 
+                <news:name>{{ site.title }}</news:name> 
+                <news:language>{{ site.language }}</news:language>
+            </news:publication> 
+            <news:publication_date>{{ entry.page.date | date_to_datetime }}</news:publication_date> 
+            <news:title>{{ entry.data.title }}</news:title> 
+        </news:news>
+    </url>{% endif %}{% endfor %}
+</urlset> 

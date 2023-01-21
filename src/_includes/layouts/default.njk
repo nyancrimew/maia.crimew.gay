@@ -16,7 +16,7 @@
     {% if feature_alt %}<meta property="og:image:alt" content="{{ feature_alt }}">{% endif %}
     <meta property="og:site_name" content="{{ site.title }}">
     <meta name="article:author" content="{{ site.name }}">
-    {% if date %}<meta name="article:published_time" content="{{ date | date_to_datetime }}">{% endif %}
+    {% if page.date %}<meta name="article:published_time" content="{{ page.date | date_to_datetime }}">{% endif %}
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="{{ site.twitter }}">
     <meta name="twitter:creator" content="{{ site.twitter }}">
