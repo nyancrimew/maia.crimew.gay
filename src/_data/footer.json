@@ -98,7 +98,7 @@
     {
       "badge": "slugcat.png",
       "alt": "slugcat"
-    }, 
+    },
     {
       "badge": "sinewave.gif",
       "alt": "sinewave",
@@ -108,7 +108,7 @@
       "badge": "nonbinary.png",
       "alt": "non-binary pride",
       "title": "im non binary fr fr"
-    }, 
+    },
     {
       "badge": "queer.png",
       "alt": "queer pride",
@@ -124,6 +124,12 @@
       "alt": "utsuho rocks",
       "title": "utsuho rocks",
       "link": "https://utsuho.rocks"
+    },
+    {
+      "badge": "ilwagbannersmol.png",
+      "alt": "ilwag.com",
+      "title": "cute lil tunes :3",
+      "link": "https://ilwag.com"
     }
   ]
 }
