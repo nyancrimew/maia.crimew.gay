@@ -98,3 +98,29 @@ img {
   content: "→";
   margin-inline-start: 1ch;
 }
+
+.sleepy-zone-webring-container {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  font-size: 1.125rem;
+}
+.sleepy-zone-webring-description {
+  margin-block-end: 0.5em;
+}
+.sleepy-zone-webring-site-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sleepy-zone-webring-prev-site a::before {
+  content: "←";
+  margin-inline-end: 1ch;
+}
+.sleepy-zone-webring-next-site a::after {
+  content: "→";
+  margin-inline-start: 1ch;
+}

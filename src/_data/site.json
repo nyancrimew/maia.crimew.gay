@@ -19,6 +19,10 @@
     "webring": {
         "version": "0.2.0",
         "siteId": "maia"
+    },
+    "sleepyWebring": {
+        "version": "0.1",
+        "siteId": "nyancrimew"
     }
   }
   
