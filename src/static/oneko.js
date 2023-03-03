@@ -1,4 +1,4 @@
-// based on: https://www.cssscript.com/cat-follow-cursor-oneko/ (licensed under MIT) and edited for maia kitten support with art from https://twitter.com/_Anunnery
+// based on oneko.js from https://github.com/adryd325/oneko.js, licensed under MIT, with art from https://twitter.com/_Anunnery
 
 (function oneko() {
     const nekoEl = document.createElement("div");
@@ -62,6 +62,7 @@
         nekoEl.style.width = "32px";
         nekoEl.style.height = "32px";
         nekoEl.style.position = "fixed";
+        nekoEl.style.pointerEvents = "none";
         nekoEl.style.backgroundImage = "url('/img/maia_oneko.gif')";
         nekoEl.style.imageRendering = "pixelated";
         nekoEl.style.left = "16px";
