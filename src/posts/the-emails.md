@@ -1,7 +1,7 @@
 ---
 title: "the emails - 2600 pages of hate"
 date: 2023-03-08
-description: "a collection emails from 2019-2021 between dozens of anti-trans expert witnesses, US right-wing lawmakers and conservative legal groups"
+description: "a collection of emails from 2019-2021 between dozens of anti-trans expert witnesses, US right-wing lawmakers and conservative legal groups"
 tags:
     - transphobia
     - leak
