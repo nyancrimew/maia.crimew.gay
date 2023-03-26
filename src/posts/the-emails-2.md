@@ -1,7 +1,7 @@
 ---
 title: "the emails pt 2 - 810 more hateful emails"
 date: 2023-03-26
-description: "another collection of emails from 2017-2023 from the schupe archive"
+description: "another collection of emails from 2017-2023 from the shupe archive"
 tags:
     - transphobia
     - leak
@@ -13,7 +13,7 @@ feature_alt: "a glitchy edited photo of a fax machine"
 **CLARIFICATION: i, maia, am not the source of this email leak, merely a publisher, since i feel that this should be more widely available than just to selected journalists**
 
 a few days after my [original public release](/posts/the-emails/) of 2600 pages of emails showing the massive anti-trans conspiracy in the US, [xtra magazine released another article](https://xtramagazine.com/power/detransition-terf-movement-elisa-shupe-247592) (which i highly recommend reading). 
-this aritcle is notable since it's based on even more leaked emails than the mother jones story, elisa rae schupe has provided several journalists with an archive of her *entire* inbox from 2017-2023. i do not have access to that entire archive (and don't want to, given the amount of personal information),
+this aritcle is notable since it's based on even more leaked emails than the mother jones story, elisa rae shupe has provided several journalists with an archive of her *entire* inbox from 2017-2023. i do not have access to that entire archive (and don't want to, given the amount of personal information),
 however i have been given access to 810 more notable emails and email threads, including twitter dm notifications, discussions with fox news journalists and much more.
 
 i will not be providing much more of a summary of the contents here, besides what xtra covers and what other trans researchers and journalists will shortly be covering on twitter, since i do not wanna drown myself in transphobia. much love and respect to everyone who has the energy to do this digging,
