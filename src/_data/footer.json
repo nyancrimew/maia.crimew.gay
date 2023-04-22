@@ -5,8 +5,8 @@
       "link": "https://maia.crimew.gay/feed.xml"
     },
     {
-      "name": "birded site",
-      "link": "https://twitter.com/maiaarson"
+      "name": "tumblr",
+      "link": "https://nyancrimew.tumblr.com"
     },
     {
       "name": "fedded verse",
@@ -31,6 +31,10 @@
     {
       "name": "ko-fi",
       "link": "https://ko-fi.com/nyancrimew"
+    },
+    {
+      "name": "reddit",
+      "link": "https://reddit.com/u/nyancrimew"
     }
   ],
   "badges": [
