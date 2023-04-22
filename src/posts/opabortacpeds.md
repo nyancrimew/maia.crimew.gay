@@ -10,7 +10,7 @@ feature_image: /img/posts/opabortacpeds/cover.jpg
 feature_alt: "an extremely unflattering screenshot of sue liebel talking in a zoom call"
 ---
 
-> **note:** this is a collaborative release, the release and note below were worked on by multiple people, also this release is only a snippet of the data availabe to us and more of it will be released in the future
+> **note:** this is a collaborative release, the release and note below were worked on by multiple people
 
 **OPAbortACPeds pt 1.zip (~3.9GB) [torrent](/files/OPAbortACPeds1.torrent) ([magnet](magnet:?xt=urn:btih:9ed6bc85bcd461c696cb39321743426faaf07b05))** 
 
@@ -55,16 +55,6 @@ Sue Swayze Liebel, 16:23-17:04: “We want to emphasize that the likely outcome 
 Acpeds files contain their collaborations with the cmda, aaplog, and adf, their long term efforts against mifepristone, against contraception, against transitioning, against marriage equality, against gay parents, in favor of conversion therapy on children, in favor of parents hitting their children as a punishment, in favor of medical abuse and forced detransition, and in favor of forced pregnancy and birth
 
 Ahm v fda dockets: [2:22-cv-00223](https://www.courtlistener.com/docket/65768749/alliance-for-hippocratic-medicine-v-us-food-and-drug-administration/), [23-10362](https://www.courtlistener.com/docket/67164167/alliance-hippocratic-medicine-v-fda/) 
-
-on a personal note: your dark money and your false god did not stop this from happening to you. today you get to learn what it feels like to be helpless. you left women to be killed and maimed by denial of medical care, you abandoned them to die of sepsis and haemorrhage or to a life of domestic servitude, trapped with men who rape and abuse them and their children into the grave. you are death addicts, you are the anti-everyone, and everyone will stop you. it is the year 2023, we will not suffer the sophistry of cultists pretending a man could magically reanimate, and then making us watch as you let pregnant people die. No more. we will starve you in your womb. we will not let you kill us and we will not let our friends and family die and we will never let the future fall to you. the future is female and the future is pro-abortion, the future is a liberated uterus and drag shows and school pride clubs, the future is trans, queer, beautiful, alive and free
-
-there is more to come from your files
-
-fuck matthew kacsmaryk
-
-fuck the federalist society
-
-remember eden knight 🔆
 
 > if you liked this or any of my other work feel free to support me on my [ko-fi](https://ko-fi.com/nyancrimew). i am unemployed and poor and do this work for free because i enjoy it, so anything goes a long way. ko-fi also makes it easy to do recurring donations akin to patreon subscirptions, which help me a lot with budgeting.
 
