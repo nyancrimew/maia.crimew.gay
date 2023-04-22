@@ -7,7 +7,7 @@ tags:
     - politics
     - leak
 feature_image: /img/posts/opabortacpeds/cover.jpg
-feature_alt: "an extremely unflattering screenshot of jill simons talking in a zoom call"
+feature_alt: "an extremely unflattering screenshot of sue liebel talking in a zoom call"
 ---
 
 > **note:** this is a collaborative release, the release and note below were worked on by multiple people, also this release is only a snippet of the data availabe to us and more of it will be released in the future
