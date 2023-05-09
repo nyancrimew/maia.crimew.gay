@@ -23,5 +23,3 @@ you are allowed to take a break and fight in other ways.
 so anyways, here is 810 more eml files (which can be viewed with most desktop email clients) + most (but not all) attachments already extracted as files:
 
 **the emails pt. 2 - 810 more emails of anti trans hate.zip (810 eml files, ~30mb), available as a [torrent](/files/emails2.torrent) ([magnet](magnet:?xt=urn:btih:44f004807f862afb2d74d76df5e23506b88e5948&dn=the%20emails%20pt.%202%20-%20810%20more%20emails%20of%20anti%20trans%20hate.zip))**
-
-> if you liked this or any of my other work feel free to support me on my [ko-fi](https://ko-fi.com/nyancrimew). i am unemployed and poor and do this work for free because i enjoy it, so anything goes a long way.

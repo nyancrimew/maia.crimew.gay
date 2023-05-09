@@ -3,8 +3,12 @@ html {
   color: rgb(92, 53, 124);
 }
 
-a {
+a, .like-a {
   color: rgb(255, 0, 140);
+}
+
+.like-a {
+  text-decoration: underline;
 }
 
 a.active,
@@ -71,6 +75,19 @@ img {
 
 .tag {
   font-weight: bold;
+}
+
+.banner-link {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.kofi-banner {
+  border-radius: 8px;
+  padding: 4px;
+  border: 2px solid rgb(255, 0, 140);
+  background-color: rgba(221, 116, 174, 0.211);
+  font-size: 1.1rem;
 }
 
 .lavender-webring-container {

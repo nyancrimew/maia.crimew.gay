@@ -67,7 +67,3 @@ i had owned them completely in less than a day, with pretty much no skill requir
 ## so what happens next with the nofly data
 
 while the nature of this information is sensitive, i believe it is in the public interest for this list to be made available to journalists and human rights organizations. if you are a journalist, researcher, or other party with legitimate interest, the data is available for access (upon request) [via DDoSecrets](https://ddosecrets.com/wiki/No_Fly_List).
-
-## support me
-
-if you liked this or any of my other security research feel free to support me on my [ko-fi](https://ko-fi.com/nyancrimew). i am unemployed and in a rather precarious financial situation and do this research for free and for the fun of it, so anything goes a long way.
