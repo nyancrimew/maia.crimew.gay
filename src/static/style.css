@@ -54,7 +54,8 @@ footer,
 }
 
 time,
-.author {
+.author,
+.updated {
   font-weight: bold;
 }
 

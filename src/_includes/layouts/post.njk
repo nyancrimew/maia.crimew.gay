@@ -10,6 +10,9 @@ subhead: blog
             {% endif %}
             <div class="byline">
                 <time datetime="{{date | date_to_datetime }}">{{ date | date_formatted }}</time>
+                {% if changed_date %}
+                    <small class="updated">(updated <time datetime="{{changed_date | date_to_datetime }}">{{ changed_date | date_formatted }}</time>)</small>
+                {% endif %}
                 <span>by <span class="author by" id="author">{{ site.name }}</span></span>
                 {% if tags %}
                     <span>in 
