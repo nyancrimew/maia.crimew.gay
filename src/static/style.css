@@ -91,6 +91,10 @@ img {
   font-size: 1.1rem;
 }
 
+.greentext {
+  color: #789922;
+}
+
 .lavender-webring-container {
   all: unset;
   display: flex;
