@@ -10,8 +10,8 @@ function oneko() {
   const nekoEl = document.createElement("div");
   let nekoPosX = getRandomInt(32, window.innerWidth - 63);
   let nekoPosY = getRandomInt(32, window.innerHeight - 63);
-  let mousePosX = window.innerWidth / 2;
-  let mousePosY = window.innerHeight / 2;
+  let mousePosX = nekoPosX - 32;
+  let mousePosY = nekoPosY - 32;
   let frameCount = 0;
   let idleTime = 0;
   let idleAnimation = null;
