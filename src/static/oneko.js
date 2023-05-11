@@ -1,11 +1,17 @@
 // based on oneko.js from https://github.com/adryd325/oneko.js, licensed under MIT, with art from https://twitter.com/_Anunnery
 
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
 function oneko() {
   const nekoEl = document.createElement("div");
-  let nekoPosX = 32;
-  let nekoPosY = 32;
-  let mousePosX = 0;
-  let mousePosY = 0;
+  let nekoPosX = getRandomInt(32, window.innerWidth - 63);
+  let nekoPosY = getRandomInt(32, window.innerHeight - 63);
+  let mousePosX = window.innerWidth / 2;
+  let mousePosY = window.innerHeight / 2;
   let frameCount = 0;
   let idleTime = 0;
   let idleAnimation = null;
@@ -82,8 +88,8 @@ function oneko() {
     nekoEl.style.pointerEvents = "none";
     nekoEl.style.backgroundImage = "url('/img/maia_oneko.gif')";
     nekoEl.style.imageRendering = "pixelated";
-    nekoEl.style.left = "16px";
-    nekoEl.style.top = "16px";
+    nekoEl.style.left = `${nekoPosX}px`;
+    nekoEl.style.top = `${nekoPosY}px`;
 
     document.body.appendChild(nekoEl);
 
