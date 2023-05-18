@@ -21,7 +21,7 @@ my public image is a little misleading. always silly, always cheerful, a source 
 
 > ok but maia, why would you even bring this up at all if you have such a well curated public image?
 
-i feel like it's important to contrast how i (like to) appear, with what all the shit i've been through has actually done to me. i get lots of comments all the time about how impressive it is that im still so cheerful and seemingly okay after everything i've been through and it might give you the impression that all this shit isn't scary as fuck. i want people to at least know the psychological cost of doing the kind of things i do.
+i feel like it's important to contrast how i (like to) appear, with what all the shit i've been through has actually done to me. i get lots of comments all the time about how impressive it is that im still so cheerful and seemingly okay after everything i've been through and it might give you the impression that all this shit isn't scary as fuck. i want people to at least know the psychological cost of doing the kind of things i do. this isn't really a call for sympathy or attention, but i felt like i should shed some light onto how im actually doing.
 
 ## a little story
 
