@@ -8,6 +8,9 @@ tags:
     - politics
 feature_image: /img/posts/the-emails-2/cover.jpg
 feature_alt: "a glitchy edited photo of a fax machine"
+content_warnings:
+    - transphobia
+    - us politics
 ---
 
 **CLARIFICATION: i, maia, am not the source of this email leak, merely a publisher, since i feel that this should be more widely available than just to selected journalists**

@@ -83,12 +83,22 @@ img {
   text-decoration: inherit;
 }
 
-.kofi-banner {
+.kofi-banner, .content-warnings {
   border-radius: 8px;
   padding: 4px;
   border: 2px solid rgb(255, 0, 140);
   background-color: rgba(221, 116, 174, 0.211);
   font-size: 1.1rem;
+}
+
+.content-warnings {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  width: fit-content;
+}
+
+.content-warnings > p {
+  margin: 0;
 }
 
 .greentext {

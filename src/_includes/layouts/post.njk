@@ -25,6 +25,16 @@ subhead: blog
             <h1>{{ title }}</h1>
             <strong id="lead">{{ description }}</strong>
         </header>
+        {% if content_warnings %}
+            <div class="content-warnings">
+                <p>
+                <strong>content warnings:</strong></br>
+                {% for cw in content_warnings %}
+                    <span class="cw">{{ cw }}</span>{% if not loop.last %}, {% endif %}
+                {% endfor %}
+                </p>
+            </div>
+        {% endif %}
         {{ content | safe }}
         <a class="banner-link" href="https://ko-fi.com/nyancrimew">
             <div class="kofi-banner">

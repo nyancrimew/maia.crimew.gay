@@ -8,6 +8,9 @@ tags:
     - politics
 feature_image: /img/posts/the-emails/cover.jpg
 feature_alt: "a glitchy edited photo of a fax machine"
+content_warnings:
+    - transphobia
+    - us politics
 ---
 
 **Emails.pdf (PDF, 2603 pages, 62MB), available as a [torrent](/files/emails.torrent) ([magnet](magnet:?xt=urn:btih:78cebcb51122170c857d71a6bd64e939c26af7f3&xt=urn:btmh:1220af77008cd1506d65208aa0a8cf8b288d783b90a7b4ea4f8c08fa3a5c08b90b5e))**
