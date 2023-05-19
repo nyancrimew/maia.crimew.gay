@@ -48,7 +48,8 @@ module.exports = function (eleventyConfig) {
     return str.split('/').map(part => encodeURI(part)).join('/')
   });
 
-  // this appears to potentially be dependent on rendering order
+  // TODO: this appears to potentially be dependent on rendering order
+  // TODO: actually add to the post ui
   eleventyConfig.addFilter("related", function(obj) {
     const post = this.ctx;
     const posts = this.ctx.collections.posts.map(post => post.data);
