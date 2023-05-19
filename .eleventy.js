@@ -3,6 +3,7 @@ const pluginRss = require('@11ty/eleventy-plugin-rss');
 const timeToRead = require('eleventy-plugin-time-to-read');
 const safeLinks = require('@sardine/eleventy-plugin-external-links');
 const eleventySass = require("@11tyrocks/eleventy-plugin-sass-lightningcss");
+const related = require("eleventy-plugin-related");
 
 module.exports = function (eleventyConfig) {
   const parseDate = (str) => {
@@ -45,11 +46,35 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter('urlescape', str => {
     return str.split('/').map(part => encodeURI(part)).join('/')
-  })
+  });
+
+  // this appears to potentially be dependent on rendering order
+  eleventyConfig.addFilter("related", function(obj) {
+    const post = this.ctx;
+    const posts = this.ctx.collections.posts.map(post => post.data);
+
+    const tagScore = (a, b) => {
+      const total = a.tags.length + b.tags.length;
+      const intersection = a.tags.filter(tag => b.tags.includes(tag)).length;
+      return (intersection * 2) / total;
+    }
+
+    const results = related.related({
+      serializer: (doc) => [doc.title, doc.description],
+      weights: [10, 10],
+    })(post, posts).map(result => {
+      return {
+        relative: result.relative + tagScore(post, result.document),
+        document: result.document
+      }
+    });
+
+    return results.filter(result => result.relative > 0.0).slice(0,3);
+  });
 
   eleventyConfig.addCollection('posts', collection => {
     return collection.getFilteredByGlob('src/posts/*.md').reverse()
-  })
+  });
 
   return {
     templateFormats: ["njk", "md", "html"],

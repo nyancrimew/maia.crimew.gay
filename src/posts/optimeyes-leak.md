@@ -3,6 +3,7 @@ title: "infosec company owned completely by 4chan user"
 date: 2023-05-10
 description: "risk visualize deez nuts"
 tags:
+    - leak
     - security
     - infosec
     - jenkins
