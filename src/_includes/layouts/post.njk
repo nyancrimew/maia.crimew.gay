@@ -13,7 +13,11 @@ subhead: blog
                 {% if changed_date %}
                     <small class="updated">(updated <time datetime="{{changed_date | date_to_datetime }}">{{ changed_date | date_formatted }}</time>)</small>
                 {% endif %}
+                <span class="middot"></span>
+                <span class="readtime">{{ content | timeToRead }} to read</span>
+                <span class="middot"></span>
                 <span>by <span class="author by" id="author">{{ site.name }}</span></span>
+                <span class="middot"></span>
                 {% if tags %}
                     <span>in 
                         {% for tag in tags %}

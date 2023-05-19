@@ -41,6 +41,14 @@ footer,
   text-align: center;
 }
 
+.list-entry {
+  list-style-type: none;
+}
+
+.list-entry h2 {
+  margin-bottom: 0;
+}
+
 #content {
   max-width: 900px;
   margin-left: auto;
@@ -51,6 +59,11 @@ footer,
 
 .byline {
   font-size: 0.75rem;
+}
+
+.middot::after {
+  content: '\00B7';
+  display: inline-block;
 }
 
 time,

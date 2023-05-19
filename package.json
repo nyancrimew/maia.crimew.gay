@@ -10,6 +10,7 @@
     "dependencies": {
         "@11ty/eleventy": "^v2.0.0-beta.1",
         "@11ty/eleventy-plugin-rss": "^1.2.0",
-        "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0"
+        "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
+        "eleventy-plugin-time-to-read": "^1.3.0"
     }
 }

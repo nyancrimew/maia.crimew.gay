@@ -20,9 +20,26 @@ date: git Last Modified
   <ul>
     {% set taglist = collections[ tag ] %}
     {% for entry in taglist | reverse %}
-    <li>
-      <span><a href="{{ entry.url }}">{{ entry.data.title }}</a> on <span><time datetime="{{ entry.page.date | date_to_datetime }}">{{ entry.page.date | date_formatted }}</time></span></span>
-    </li>
+      <li class="list-entry">
+          <a href="{{ entry.url }}"><h2>{{ entry.data.title }}</h2></a>
+          <div class="byline">
+          <time datetime="{{ entry.page.date | date_to_datetime }}">{{ entry.page.date | date_formatted }}</time>
+          {% if entry.data.changed_date %}
+              <small class="updated">(updated <time datetime="{{ entry.data.changed_date | date_to_datetime }}">{{ entry.data.changed_date | date_formatted }}</time>)</small>
+          {% endif %}
+          <span class="middot"></span>
+          <span>by <span class="author by" id="author">{{ site.name }}</span></span>
+          <span class="middot"></span>
+          {% if entry.data.tags %}
+              <span>in 
+                  {% for tag in entry.data.tags %}
+                      <span class="tag"><a href="/posts/tagged/{{ tag | slugify }}/">{{ tag }}</a></span>{% if not loop.last %}, {% endif %}
+                  {% endfor %}
+              </span>
+          {% endif %}
+          </div>
+          <span class="lead"><strong>{{ entry.data.description }}</strong></span>
+      </li>
     {% endfor %}
   </ul>
 {% endblock %}

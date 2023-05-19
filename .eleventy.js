@@ -1,5 +1,6 @@
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const pluginRss = require('@11ty/eleventy-plugin-rss');
+const timeToRead = require('eleventy-plugin-time-to-read');
 
 module.exports = function (eleventyConfig) {
   const parseDate = (str) => {
@@ -12,8 +13,9 @@ module.exports = function (eleventyConfig) {
   const formatPart = (part, date) =>
   new Intl.DateTimeFormat("en", part).format(date);
 
-  eleventyConfig.addPlugin(pluginRss)
-  eleventyConfig.addPlugin(syntaxHighlight)
+  eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(timeToRead);
 
   eleventyConfig.addPassthroughCopy({ "src/static": "/" });
 
