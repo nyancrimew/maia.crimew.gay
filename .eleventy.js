@@ -14,6 +14,11 @@ module.exports = function (eleventyConfig) {
   const formatPart = (part, date) =>
   new Intl.DateTimeFormat("en", part).format(date);
 
+  eleventyConfig.setNunjucksEnvironmentOptions({
+    lstripBlocks: true,
+    trimBlocks: true
+  });
+
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(timeToRead);
