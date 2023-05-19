@@ -2,6 +2,7 @@ const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const timeToRead = require('eleventy-plugin-time-to-read');
 const safeLinks = require('@sardine/eleventy-plugin-external-links');
+const eleventySass = require("@11tyrocks/eleventy-plugin-sass-lightningcss");
 
 module.exports = function (eleventyConfig) {
   const parseDate = (str) => {
@@ -23,6 +24,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(timeToRead);
   eleventyConfig.addPlugin(safeLinks);
+  eleventyConfig.addPlugin(eleventySass);
 
   eleventyConfig.addPassthroughCopy({ "src/static": "/" });
 
