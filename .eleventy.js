@@ -48,8 +48,6 @@ module.exports = function (eleventyConfig) {
     return str.split('/').map(part => encodeURI(part)).join('/')
   });
 
-  // TODO: this appears to potentially be dependent on rendering order
-  // TODO: actually add to the post ui
   eleventyConfig.addFilter("related", function(obj) {
     const post = this.ctx;
     const posts = this.ctx.collections.posts.map(post => post.data);
@@ -64,13 +62,14 @@ module.exports = function (eleventyConfig) {
       serializer: (doc) => [doc.title, doc.description],
       weights: [10, 10],
     })(post, posts).map(result => {
+      console.log(result.document);
       return {
         relative: result.relative + tagScore(post, result.document),
         document: result.document
       }
     });
 
-    return results.filter(result => result.relative > 0.0).slice(0,3);
+    return results.filter(result => result.relative > 0.2).sort((a, b) => a.relative - b.relative).reverse().slice(0,3);
   });
 
   eleventyConfig.addCollection('posts', collection => {

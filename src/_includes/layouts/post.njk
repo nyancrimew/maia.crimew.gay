@@ -17,8 +17,8 @@ subhead: blog
                 <span class="readtime">{{ content | timeToRead }} to read</span>
                 <span class="middot"></span>
                 <span>by <span class="author by" id="author">{{ site.name }}</span></span>
-                <span class="middot"></span>
                 {% if tags %}
+                    <span class="middot"></span>
                     <span>in 
                         {% for tag in tags %}
                             <span class="tag"><a href="/posts/tagged/{{ tag | slugify }}/">{{ tag }}</a></span>{% if not loop.last %}, {% endif %}
@@ -47,4 +47,35 @@ subhead: blog
             </div>
         </a>
     </article>
+    {% for rel in "" | related %}
+        {% if loop.first %}
+        <div class="related">
+        <h3>related posts</h3>
+        <ul>
+        {% endif %}
+        <li class="list-entry">
+            <!-- rank {{ rel.relative }} -->
+            <a href="{{ rel.document.page.url }}"><h4>{{ rel.document.title }}</h4></a>
+            <div class="byline">
+                <time datetime="{{ rel.document.page.date | date_to_datetime }}">{{ rel.document.page.date | date_formatted }}</time>
+                {% if rel.document.changed_date %}
+                    <small class="updated">(updated <time datetime="{{ rel.document.changed_date | date_to_datetime }}">{{ rel.document.changed_date | date_formatted }}</time>)</small>
+                {% endif %}
+                <span class="middot"></span>
+                <span class="readtime">{{ rel.document.content | timeToRead }} to read</span>
+                <span class="middot"></span>
+                <span>by <span class="author by" id="author">{{ site.name }}</span></span>
+                {% if rel.document.tags %}
+                    <span class="middot"></span>
+                    <span>in 
+                    {% for tag in rel.document.tags %}
+                        <span class="tag"><a href="/posts/tagged/{{ tag | slugify }}/">{{ tag }}</a></span>{% if not loop.last %}, {% endif %}
+                    {% endfor %}
+                    </span>
+                {% endif %}
+            </div>
+            <span class="lead"><strong>{{ rel.document.description }}</strong></span>
+        </li>
+        {% if loop.last %}</ul></div>{% endif %}
+    {% endfor %}
 {% endblock %}

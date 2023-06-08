@@ -22,8 +22,8 @@ permalink: /posts/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumbe
         <span class="readtime">{{ entry.content | timeToRead }} to read</span>
         <span class="middot"></span>
         <span>by <span class="author by" id="author">{{ site.name }}</span></span>
-        <span class="middot"></span>
         {% if entry.data.tags %}
+            <span class="middot"></span>
             <span>in 
                 {% for tag in entry.data.tags %}
                     <span class="tag"><a href="/posts/tagged/{{ tag | slugify }}/">{{ tag }}</a></span>{% if not loop.last %}, {% endif %}

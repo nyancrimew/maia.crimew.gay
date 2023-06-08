@@ -79,6 +79,26 @@ time,
   border-bottom: 1px dotted rgb(219, 103, 167);
 }
 
+.related {
+  margin-top: 18px;
+  border-top: 1px dotted rgb(219, 103, 167);
+
+  h3 {
+    margin-top: 4px;
+    margin-bottom: 0;
+  }
+
+  ul {
+    margin-top: 4px;
+    padding-left: 0;
+
+    h4 {
+      margin-top: 4px;
+      margin-bottom: 0;
+    }
+  }
+}
+
 .article_header>h1,
 .page_header>h1 {
   margin: 0.1rem;
