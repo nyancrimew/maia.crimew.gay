@@ -27,8 +27,9 @@
     <link rel="shortcut icon" href="/favicon.ico">
 
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-    
-    <script async src="https://umami.crimew.gay/script.js" data-website-id="fa7a72e7-acbc-488d-beb2-213886be0262"></script>
+    {% if env.environment.isProd %}
+      <script async src="https://umami.crimew.gay/script.js" data-website-id="fa7a72e7-acbc-488d-beb2-213886be0262"></script>
+    {% endif %}
   </head>
   <body>
     <header id="site_header">

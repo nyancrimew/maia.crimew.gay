@@ -3,8 +3,8 @@
     "version": "1.0.0",
     "description": "",
     "scripts": {
-        "build": "rm -rf www && eleventy",
-        "serve": "rm -rf www && eleventy --serve",
+        "build": "ELEVENTY_ENV=prod rm -rf www && eleventy",
+        "serve": "ELEVENTY_ENV=dev rm -rf www && eleventy --serve",
         "update": "git pull && npm i && npm run build"
     },
     "dependencies": {
