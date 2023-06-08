@@ -62,7 +62,6 @@ module.exports = function (eleventyConfig) {
       serializer: (doc) => [doc.title, doc.description],
       weights: [10, 10],
     })(post, posts).map(result => {
-      console.log(result.document);
       return {
         relative: result.relative + tagScore(post, result.document),
         document: result.document
