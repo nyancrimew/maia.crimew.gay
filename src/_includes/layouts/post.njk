@@ -54,7 +54,7 @@ subhead: blog
         <ul>
         {% endif %}
         <li class="list-entry">
-            <!-- rank {{ rel.relative }} -->
+            <!-- rank: {{ rel.relative }} -->
             <a href="{{ rel.document.page.url }}"><h4>{{ rel.document.title }}</h4></a>
             <div class="byline">
                 <time datetime="{{ rel.document.page.date | date_to_datetime }}">{{ rel.document.page.date | date_formatted }}</time>
