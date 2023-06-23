@@ -1,6 +1,7 @@
 ---
 title: "#FuckStalkerware pt. 0 - intro + what is stalkerware?"
 date: 2023-06-22
+changed_date: 2023-06-23
 description: "lets ruin some shitty peoples lives wooo"
 feature_image: /img/posts/fuckstalkerware-0/cover.jpg
 feature_alt: "a glitchy edited screenshot of the landing page for a stalkerware product"
@@ -34,6 +35,6 @@ ok i feel like it should already just be clear from the previous section why sta
 
 ## so what is this series gonna be about
 
-alright so, see point 5 above? yea that, i will be collecting stalkerware breaches sent to me, looking into companies myself, and blogging about them one by one. revealing (as far as possible) how unsecure they are, who's behind them, trying to get comment, and helping other journalists with stalkerware related reporting. two blog posts are already in the works, and if you have anything to contribute to potential reporting (vulns you find in stalkerware software, leaked data, investigations, insider info \[your identity will be protected], etc) or are a journalist looking to cover anything in this series in more detail, contact me \[contact page with an email address + pgp key will be up within the next few days, if you already have me on signal feel free to reach out now].
+alright so, see point 5 above? yea that, i will be collecting stalkerware breaches sent to me, looking into companies myself, and blogging about them one by one. revealing (as far as possible) how unsecure they are, who's behind them, trying to get comment, and helping other journalists with stalkerware related reporting. two blog posts are already in the works, and if you have anything to contribute to potential reporting (vulns you find in stalkerware software, leaked data, investigations, insider info \[your identity will be protected], etc) or are a journalist looking to cover anything in this series in more detail, [contact me](/contact/).
 
 > note: [the EFF has also been doing really important work rooting out stalkerware for many years now](https://stopstalkerware.org/) (cool website to learn even more about stalkerware too), which i have previously contributed to with other work, which i will not link due to it being linked to my deadname

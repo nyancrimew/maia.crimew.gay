@@ -8,6 +8,10 @@
         "link": "/posts/"
     },
     {
+        "name": "contact",
+        "link": "/contact/"
+    },
+    {
         "name": "sample packs",
         "link": "/samples/"
     }
