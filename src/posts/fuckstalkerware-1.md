@@ -1,6 +1,7 @@
 ---
 title: "#FuckStalkerware pt. 1 - the LetMeSpy hack"
 date: 2023-06-26
+date_changed: 2023-06-27
 description: "let the games begin"
 feature_image: /img/posts/fuckstalkerware-1/cover.jpg
 feature_alt: "a glitchy edited screenshot of the landing page for LetMeSpy"
@@ -58,7 +59,7 @@ alright, so obviously there is the message and call logs, revealing with whom an
 
 additionally available in the database are: geolocation logs, ip addresses for each log entry, ip addresses for the operators, phone model, android version, operator payment logs. this data also shows us that there is around 10000 phones registered to be surveilled via this software, though a large part of them seem to have never sent any activity updates.
 
-what i also found in the database is global configuration for the site, which reveals that letmespy is run by [Rafał Lidwin](https://pl.linkedin.com/in/lidwin) ([lidwin@lidwin.pl](mailto:lidwin@lidwin.pl)), which tracks since (according to his linkedin) he's the CTO of [RADEAL](https://www.radeal.pl/), the company that according to the footer runs LMS, he's the first user to have signed up and lidwin appears all over the place.
+what i also found in the database is global configuration for the site, which reveals that letmespy is run by [Rafał Lidwin](https://pl.linkedin.com/in/lidwin) ([second linkedin](https://pl.linkedin.com/in/rafal-lidwin-27a15237), [lidwin@lidwin.pl](mailto:lidwin@lidwin.pl)), which tracks since (according to his new linkedin) he's the CTO of [RADEAL](https://www.radeal.pl/), the company that according to the footer runs LMS, the second profile (which seems outdated) directly links to his known old business (lidwin.pl) as well as hurtownie.pl, which the db also makes clear is his, checking the footer of those sites they credit SL Media sp. which the newer linkedin claims to be manager and former programmer of, the unis also match between the two profiles plus he's the first user to have signed up and lidwin appears all over the place.
 
 ```sql
 --
