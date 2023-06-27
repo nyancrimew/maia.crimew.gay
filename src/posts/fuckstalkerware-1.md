@@ -58,7 +58,7 @@ alright, so obviously there is the message and call logs, revealing with whom an
 
 additionally available in the database are: geolocation logs, ip addresses for each log entry, ip addresses for the operators, phone model, android version, operator payment logs. this data also shows us that there is around 10000 phones registered to be surveilled via this software, though a large part of them seem to have never sent any activity updates.
 
-what i also found in the database is global configuration for the site, which reveals that letmespy is run by [Rafał Lidwin](https://pl.linkedin.com/in/lidwin) ([lidwin@lidwin.pl](mailto:lidwin@lidwin.pl)), which tracks since (according to his linkedin) he's the CTO of [RADEAL](https://www.radeal.pl/), the company that according to the footer runs LMS, he's the first user to have signed up and lidwin appears all over the place.
+what i also found in the database is global configuration for the site, which reveals that letmespy is run by Rafał Lidwin ([lidwin@lidwin.pl](mailto:lidwin@lidwin.pl)), which tracks since he's the first user to have signed up and lidwin appears all over the place.
 
 ```sql
 --
