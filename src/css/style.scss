@@ -79,6 +79,12 @@ time,
   border-bottom: 1px dotted rgb(219, 103, 167);
 }
 
+.article_header {
+  img {
+    width: 100%;
+  }
+}
+
 .related {
   margin-top: 18px;
   border-top: 1px dotted rgb(219, 103, 167);
@@ -105,7 +111,7 @@ time,
 }
 
 img {
-  max-width: 75%;
+  max-width: 100%;
 }
 
 .tag {
