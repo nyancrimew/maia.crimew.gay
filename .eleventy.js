@@ -4,6 +4,8 @@ const timeToRead = require('eleventy-plugin-time-to-read');
 const safeLinks = require('@sardine/eleventy-plugin-external-links');
 const eleventySass = require("@11tyrocks/eleventy-plugin-sass-lightningcss");
 const related = require("eleventy-plugin-related");
+const markdownIt = require("markdown-it");
+const markdownItAnchor = require("markdown-it-anchor");
 
 module.exports = function (eleventyConfig) {
   const parseDate = (str) => {
@@ -20,6 +22,8 @@ module.exports = function (eleventyConfig) {
     lstripBlocks: true,
     trimBlocks: true
   });
+
+  eleventyConfig.setLibrary("md", markdownIt({ "html": true }).use(markdownItAnchor, { "level": 2 }));
 
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(syntaxHighlight);
