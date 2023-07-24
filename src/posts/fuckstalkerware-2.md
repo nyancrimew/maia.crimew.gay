@@ -100,6 +100,16 @@ i once again obviously also searched the email address and [email domain list](/
 
 spyhide also appears to keep data around for way longer than they even tell the operators, for photos and audio recordings they claim that all data will be deleted after 3 months, however i have found photos as well as recordings from all the way back in mid 2022. this data appears to only actually be deleted from storage when devices "expire", as in the operators stops paying for the subscription or they have been disconnected for a specific amount of time.
 
+## a small "bonus"
+
+here is the "tizer" \[sic.\] for spyhide which they put on their website, it's incredibly hilarious to me so i had to share it
+
+<video controls>
+  <source src="/img/posts/fuckstalkerware-2/tizer.mp4" type="video/mp4">
+</video>
+
+i dont think ive ever seen a product ad that was as over the top and as 2013-minecraft-core as this. "spyhide .. presents .. cheating on you" is just burned into my mind as the funniest marketing phrasing ever. their marketing does also just straight up admit to how their software is intended to be used for spying on partners without consent, it's wild how incredibly forward they are about that.
+
 ## developments since i started writing this
 
 on the evening of sunday the 23rd i noticed that i could no longer sign into my testing account at spyhide, it appears that virsis has "responded to my request for comment" by closing up at least some of the holes. sign ups were disabled (except i think through the app ?), some database password were changed, my webshell removed and my account deleted. a quick check with goop shows that .git is still exposed and nothing else (including the arbitrary file upload) has been fixed.
