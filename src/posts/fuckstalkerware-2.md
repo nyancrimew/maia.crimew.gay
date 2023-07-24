@@ -1,6 +1,7 @@
 ---
 title: "#FuckStalkerware pt. 2 - SpyHide couldnt hide forever"
 date: 2023-07-24
+date_changed: 2023-07-24
 description: "and once again it was way too easy"
 feature_image: /img/posts/fuckstalkerware-2/cover.jpg
 feature_alt: "a glitchy edited screenshot of the SpyHide dashboard"
@@ -32,15 +33,17 @@ and so i began digging into the repository, first with a focus mostly on figurin
 	fetch = +refs/heads/*:refs/remotes/origin/*
 ```
 
-the account name says "Arasteh" and the bio reads "CEO of Decima Tech", , which (along with the "virsysplaytech" name above) we should keep in mind, because they also appear in the list of git commit authors (with a slightly different spelling of virsys):
+the account name says "Arasteh" and the bio reads "CEO of Decima Tech", which (along with the "virsysplaytech" name above) we should keep in mind, because they also appear in the list of git commit authors (with a slightly different spelling of virsys):
 
 ```bash
 nyancrimew@meowcbook CRTPanel % git shortlog --summary --numbered --all -e             
-   160  mojmadah <mojmadah@gmail.com>
+   160  mo<xxxx> <mo<xxxx>@gmail.com>
     34  root <root@server.virsis.net>
      1  Arasteh <83481775+virsysplaytech@users.noreply.github.com>
 ```
-so the spyhide site appears to be hosted on a server called server.virsis.net, and we have the only real dev behind their php infrastructure. mojmadah (Mohammad Aresteh, oh here is that name again) is fairly easily googleable, and it turns out his email address has been used to [register various domain names](https://website.informer.com/email/mojmadah@gmail.com) (which given these companies are all called decima* also confirms that virsysplaytech is Mohammad's account). based on further clues in the source code, OSINT, as well as having owned the decima [ERP system](https://en.wikipedia.org/wiki/Enterprise_resource_planning) they used for a bit in 2021 (story for another day), it can also be concluded that Mohammad also goes by Mahdi/Mehdi (مهدى) and the username mahdi110 in various places. i reached out to mohammad for comment via email as well as telegram (where he blocked me) - at the time of publishing i have not received any real response.
+<small>name/email censored by me</small>
+
+so the spyhide site appears to be hosted on a server called server.virsis.net, and we have the main dev behind their php infrastructure. mo.... (Mohammad A.) is fairly easily googleable, and it turns out his email address has been used to register various domain names. based on further clues in the source code, OSINT, as well as having owned his [ERP system](https://en.wikipedia.org/wiki/Enterprise_resource_planning) they used for a bit in 2021 (story for another day), it can also be concluded that Mohammad also goes by Mahdi/Mehdi (مهدى) and the username \<xxxxx\> in various places. i reached out to mohammad for comment via email as well as telegram (where he blocked me) - at the time of publishing i have not received any real response. (see [update](#updates) below for statement received after publishing)
 
 so the people involved, as well as the source code and references to a former iranian front for SpyHide (spyhide.ir) is how it at least became clear that spyhide is software by an iranian company called virsys or virsis. and that's about all i managed to gather about the backgrounds of this company from surface research based on the repository, so it's time to move on to the real fun stuff! diving into the source code and...
 
@@ -115,3 +118,7 @@ i dont think ive ever seen a product ad that was as over the top and as 2013-min
 on the evening of sunday the 23rd i noticed that i could no longer sign into my testing account at spyhide, it appears that virsis has "responded to my request for comment" by closing up at least some of the holes. sign ups were disabled (except i think through the app ?), some database password were changed, my webshell removed and my account deleted. a quick check with goop shows that .git is still exposed and nothing else (including the arbitrary file upload) has been fixed.
 
 the data from this leak will be available soon in limited distribution to other journalists and researchers via [DDoSecrets](https://ddosecrets.com) (please [support them financially](https://ddosecrets.charity)), this article will be updated to reflect that once that is the case. as always feel free to [contact](/contact) me with any tips, data, vulnerabilities, industry insider info (for this series and just in general) or for journalistic inquiries.
+
+## updates
+
+around 3 hours after publishing i received an email response from mohammad a., claiming he was only briefly involved in this project as a contractor around 8 years ago, he further claims not to know who runs spyhide or any of the people involved. his explaination for even recent commits having his name and email address attached is that he used to make commits from on the server, meaning that as a new developer picked up the work they just kept being made in his name, given what i know about how development appears to happen this seems believable enough. his full username + last name and email address have been removed from the blog post.
