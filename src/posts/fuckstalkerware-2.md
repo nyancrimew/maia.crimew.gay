@@ -104,7 +104,7 @@ spyhide also appears to keep data around for way longer than they even tell the 
 
 here is the "tizer" \[sic.\] for spyhide which they put on their website, it's incredibly hilarious to me so i had to share it
 
-<video controls>
+<video controls onloadstart="this.volume=0.3">
   <source src="/img/posts/fuckstalkerware-2/tizer.mp4" type="video/mp4">
 </video>
 
