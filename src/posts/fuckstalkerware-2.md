@@ -18,7 +18,7 @@ content_warnings:
 
 > the intro to this series and the concept of stalkerware can be found [here](/posts/fuckstalkerware-0/)
 
-this is a rather technical deep dive into how i hacked [SpyHide](https://cellphone-remote-tracker.com) (sometimes referred to by the shortening CRT, their .com domain) and a bit of [my own analysis](#analysis), for a less technical and more journalistic approach to the breach you can read [this exclusive piece in techcrunch](link).
+this is a rather technical deep dive into how i hacked [SpyHide](https://cellphone-remote-tracker.com) (sometimes referred to by the shortening CRT, their .com domain) and a bit of [my own analysis](#analysis), for a less technical and more journalistic approach to the breach you can read [this exclusive piece in techcrunch](https://techcrunch.com/2023/07/24/spyhide-stalkerware-android/).
 
 when i started work on the #FuckStalkerware series i did what i always do first, scanning for super low hanging fruit vulns without expecting much. so as i was running as scan over the target list for .git exposure (which happens when a website is deployed via git but the webserver isn't configured not to serve contents of the .git directory) among various false positives there was an actual hit. using [goop](https://github.com/nyancrimew/goop) (an offensive git dumping tool i originally developed in 2020) i managed to download the full source code and git history for the account panel of SpyHide. 
 
