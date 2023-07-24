@@ -1,7 +1,7 @@
 ---
 title: "#FuckStalkerware pt. 2 - SpyHide couldnt hide forever"
-date: 2023-07-24
-date_changed: 2023-07-24
+date: 2023-07-24T18:17:00+2
+changed_date: 2023-07-24T22:12:00+2
 description: "and once again it was way too easy"
 feature_image: /img/posts/fuckstalkerware-2/cover.jpg
 feature_alt: "a glitchy edited screenshot of the SpyHide dashboard"

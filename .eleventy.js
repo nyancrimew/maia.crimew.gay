@@ -44,6 +44,13 @@ module.exports = function (eleventyConfig) {
     const month = formatPart({ month: "short" }, date);
     const day = formatPart({ day: "numeric" }, date);
     const year = formatPart({ year: "numeric" }, date);
+    const hours = date.getUTCHours();
+    const minutes = date.getUTCMinutes();
+
+    if (hours != 0 && minutes != 0) {
+
+      return `${month} ${day}, ${year} - ${hours}:${minutes} UTC`;
+    }
 
     return `${month} ${day}, ${year}`;
   });
