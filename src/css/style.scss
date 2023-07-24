@@ -36,6 +36,15 @@ footer {
   }
 }
 
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  a {
+    font-weight: bolder;
+    font-size: large;
+  }
+}
+
 footer,
 #site_header,
 .lavender-webring-container {
