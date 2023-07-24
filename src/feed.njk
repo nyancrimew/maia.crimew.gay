@@ -36,7 +36,7 @@ metadata:
     {% endif %}
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
-    <content type="html">{{ post.templateContent | safe | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+    <content type="html">{{ post.content | safe | htmlToAbsoluteUrls(absolutePostUrl) | safe }}</content>
   </entry>
   {%- endfor %}
 </feed>
