@@ -14,7 +14,7 @@ content_warnings:
     - mentions of abuse/controlling behaviour
 ---
 
-> the intro to this series can be found [here](/posts/fuckstalkerware-0/)
+> the intro to this series and the concept of stalkerware can be found [here](/posts/fuckstalkerware-0/)
 
 a few days ago, while i was starting work on this very series, polish stalkerware company LetMeSpy (LMS) got completely pwned and had their databases dumped. the link to the file (`jaki_kraj_taki_finfisher.tar`) was sent my way, and i decided that this would be a fun thing to start this series off with, especially since so far this breach has been barely, if at all, reported on outside polish media.
 
