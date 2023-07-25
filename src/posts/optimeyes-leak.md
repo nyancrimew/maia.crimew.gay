@@ -20,7 +20,7 @@ yesterday evening an anonymous 4chan user dumped a leak on the /g/ technology bo
 <span class="greentext">> dont secure ur own systems at all</span></br>
 owned completely</br>
 <span class="greentext">> have all ur data dumped in a 4chan green text</span></br>
-magnet:?xt=urn:btih:03386cd3a22b094cd830853b6577a3197b55225f&dn=optimeyes%20dump%202023
+magnet:?xt=urn:btih:03386cd3a22b094cd830853b6577a3197b55225f&amp;dn=optimeyes%20dump%202023
 </blockquote>
 
 optimeyes is a company that is focused specifically on "cyber risks", and bolster their ability in visualizing and helping prevent IP theft. which makes it all so much more ironic how completely they have been hacked. as someone who loves a good bit of trolling against the infosec community, i obviously had to download the leak and take a look myself. it turns out it contains not only all the source code for the optimeyes platform, but also tons of customer data, the fully trained ML models optimeyes is built on and tons of hardcoded credentials for their infrastructure. one would think their product would have at least caught that bit in their own software, but oh well! 
