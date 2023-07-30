@@ -23,7 +23,7 @@ fast forward to two days ago, kittensec has posted another announcement on teleg
 
 included as is usual with releases like these are [various](/img/posts/kittensec-opromania/screenshot-4.jpg) [screenshots](/img/posts/kittensec-opromania/screenshot-2.jpg) of [documents](/img/posts/kittensec-opromania/screenshot-1.jpg) and [internal webportals](/img/posts/kittensec-opromania/screenshot-3.jpg) (click words to see them (i really need to make a small image gallery feature for this blog lmao)). the original leak was provided exclusively via MEGA, which unfortunately already took the file down one day later, which is why i decided to create a torrent mirror for this interesting release.
 
-**`OpRomania Leaks [KittenSec].zip` (220354 files, ~25gb), available as a [torrent](/files/posts/kittensec-romania/OpRomania%20Leaks%20[KittenSec].zip.torrent) ([magnet](magnet:?xt=urn:btih:10efa751dca82dd16da08c079920c0b76be7c81d&dn=OpRomania%20Leaks%20%5bKittenSec%5d.zip))**
+**`OpRomania Leaks [KittenSec].zip` (220354 files, ~25gb), available as a [torrent](/files/posts/kittensec-opromania/OpRomania%20Leaks%20[KittenSec].zip.torrent) ([magnet](magnet:?xt=urn:btih:10efa751dca82dd16da08c079920c0b76be7c81d&dn=OpRomania%20Leaks%20%5bKittenSec%5d.zip))**
 
 i have not yet and probably won't analyze this leak for a proper blog post, however i found getting it out there and preserving it as a torrent a valuable enough cause, hopefully this way it can end up in interested hands for coverage.
 
