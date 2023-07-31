@@ -1,25 +1,32 @@
+$bg: rgb(254, 175, 214);
+$text: rgb(92, 53, 124);
+$accent: rgb(146, 0, 80);
+$active-links: rgb(124, 6, 160);
+$divider: rgb(219, 103, 167);
+$semi-bg: rgba(221, 116, 174, 0.211);
+
 html {
-  background-color: rgb(236, 169, 203);
-  color: rgb(92, 53, 124);
+  background-color: $bg;
+  color: $text;
 }
 
 a {
-  color: rgb(255, 0, 140);
+  color: $accent;
 }
 
 .like-a {
-  color: rgb(255, 0, 140);
+  color: $accent;
   text-decoration: underline;
 }
 
 a.active,
 li.lavender-webring-curr-site>a {
-  color: rgb(195, 0, 255);
+  color: $active-links;
 }
 
 #site_header {
   padding-bottom: 5px;
-  border-bottom: 1px solid rgb(255, 0, 140);
+  border-bottom: 1px solid $accent;
 }
 
 footer {
@@ -28,7 +35,7 @@ footer {
 
 .footer-kitten {
   height: 88px;
-  border-bottom: 1px solid rgb(255, 0, 140);
+  border-bottom: 1px solid $accent;
   margin-bottom: 5px;
 
   >img {
@@ -85,7 +92,7 @@ time,
 .article_header,
 .page_header {
   padding-bottom: 4px;
-  border-bottom: 1px dotted rgb(219, 103, 167);
+  border-bottom: 1px dotted $divider;
 }
 
 .article_header {
@@ -96,7 +103,7 @@ time,
 
 .related {
   margin-top: 18px;
-  border-top: 1px dotted rgb(219, 103, 167);
+  border-top: 1px dotted $divider;
 
   h3 {
     margin-top: 4px;
@@ -136,16 +143,16 @@ video {
 .kofi-banner {
   border-radius: 8px;
   padding: 4px;
-  border: 2px solid rgb(255, 0, 140);
-  background-color: rgba(221, 116, 174, 0.211);
+  border: 2px solid $accent;
+  background-color: $semi-bg;
   font-size: 1.1rem;
 }
 
 .content-warnings {
   border-radius: 8px;
   padding: 4px;
-  border: 2px solid rgb(255, 0, 140);
-  background-color: rgba(221, 116, 174, 0.211);
+  border: 2px solid $accent;
+  background-color: $semi-bg;
   font-size: 1.1rem;
   margin-top: 16px;
   margin-bottom: 16px;
