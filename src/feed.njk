@@ -29,10 +29,12 @@ metadata:
   {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
   <entry>
     <title>{{ post.data.title }}</title>
+    {% if post.data.description %}<summary>{{ post.data.description }}</summary>{% endif %}
     {% if post.data.link %}<link href="{{ post.data.link }}"/>{% else %}<link href="{{ absolutePostUrl }}"/>{% endif %}
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
     <content:encoded type="html"><![CDATA[{{ post.templateContent | safe | htmlToAbsoluteUrls(absolutePostUrl) | safe }}]]></content:encoded>
+    <content type="html"><![CDATA[{{ post.templateContent | safe | htmlToAbsoluteUrls(absolutePostUrl) | safe }}]]></content>
     {% if post.data.feature_image %}<media:content url="{{ post.data.feature_image | url | absoluteUrl(metadata.url) }}" type="image/jpeg" expression="full"></media:content>{% endif %}            
   </entry>
 {% endfor %}
