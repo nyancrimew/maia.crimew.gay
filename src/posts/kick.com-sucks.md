@@ -1,6 +1,7 @@
 ---
 title: "kick.com sucks - a brief security overview"
-date: 2023-08-02
+date: 2023-08-02T18:20:00+2
+changed_date: 2023-08-02T20:45:00+2
 description: "or, the tale of a funky write-up"
 tags:
     - security
@@ -14,7 +15,7 @@ a few days ago an anonymous (the adjective, not the hacking collective) group of
 
 ### the curious case of the write-up
 
-the [link to the write-up](https://files.kick.com/tmp/66a348a9-08ac-48fd-87c9-100fa537c1b6) ([archived](https://web.archive.org/web/20230801182040/https://files.kick.com/tmp/66a348a9-08ac-48fd-87c9-100fa537c1b6), more on why this is broken in a bit) i was sent was seemingly hosted on files.kick.com, the cdn used by kick. furthermore the group explained to me that to allow them to anonymously update the write-up without the link changing, they actually use a TOR to clearnet proxy, so the actual page is hosted on an onion site ([gk3eisnvj45msa5fo7kvd4betop6zmoiplena64lowncgdcsktoo6jad.onion](http://gk3eisnvj45msa5fo7kvd4betop6zmoiplena64lowncgdcsktoo6jad.onion), [clearweb (onion.re) mirror](https://gk3eisnvj45msa5fo7kvd4betop6zmoiplena64lowncgdcsktoo6jad.onion.re)) and loaded via [corsproxy](https://corsproxy.io/) and onion.re/tor.pm. and with that curiosity out of the way it's time to properly go over the write-up titled "Considering using Kick? Think again". block quotes (the indented quotes) in the following blog post will be verbatim sections from the write-up.
+the [link to the write-up](https://files.kick.com/tmp/66a348a9-08ac-48fd-87c9-100fa537c1b6) (now taken down, [archived](https://web.archive.org/web/20230801182040/https://files.kick.com/tmp/66a348a9-08ac-48fd-87c9-100fa537c1b6), more on why this is broken in a bit) i was sent was seemingly hosted on files.kick.com, the cdn used by kick. furthermore the group explained to me that to allow them to anonymously update the write-up without the link changing, they actually use a TOR to clearnet proxy, so the actual page is hosted on an onion site ([gk3eisnvj45msa5fo7kvd4betop6zmoiplena64lowncgdcsktoo6jad.onion](http://gk3eisnvj45msa5fo7kvd4betop6zmoiplena64lowncgdcsktoo6jad.onion), [clearweb (onion.re) mirror](https://gk3eisnvj45msa5fo7kvd4betop6zmoiplena64lowncgdcsktoo6jad.onion.re)) and loaded via [corsproxy](https://corsproxy.io/) and onion.re/tor.pm, which is also why the actual content of the write-up won't display on archive.org. and with that curiosity out of the way it's time to properly go over the write-up titled "Considering using Kick? Think again". block quotes (the indented quotes) in the following blog post will be verbatim sections from the write-up.
 
 ### first vuln: chat message fabrication
 
