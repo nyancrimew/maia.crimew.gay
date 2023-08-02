@@ -14,7 +14,7 @@ metadata:
     id: https://maia.crimew.gay/
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xml:base="{{ metadata.url }}">
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:base="{{ metadata.url }}">
   <title>{{ metadata.title }}</title>
   <subtitle>{{ metadata.feed.subtitle }}</subtitle>
   <link href="{{ metadata.feed.url }}" rel="self"/>
@@ -33,7 +33,6 @@ metadata:
     {% if post.data.link %}<link href="{{ post.data.link }}"/>{% else %}<link href="{{ absolutePostUrl }}"/>{% endif %}
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
-    <content:encoded type="html"><![CDATA[{{ post.templateContent | safe | htmlToAbsoluteUrls(absolutePostUrl) | safe }}]]></content:encoded>
     <content type="html"><![CDATA[{{ post.templateContent | safe | htmlToAbsoluteUrls(absolutePostUrl) | safe }}]]></content>
     {% if post.data.feature_image %}<media:content url="{{ post.data.feature_image | url | absoluteUrl(metadata.url) }}" type="image/jpeg" expression="full"></media:content>{% endif %}            
   </entry>
