@@ -1,7 +1,7 @@
 ---
 title: "kick.com sucks - a brief security overview"
 date: 2023-08-02T18:20:00+2
-changed_date: 2023-08-03T08:50:00+2
+changed_date: 2023-08-03T10:50:00+2
 description: "or, the tale of a funky write-up"
 tags:
     - security
