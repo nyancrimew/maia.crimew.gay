@@ -1,7 +1,7 @@
 ---
 title: "kick.com sucks - a brief security overview"
 date: 2023-08-02T18:20:00+2
-changed_date: 2023-08-02T20:45:00+2
+changed_date: 2023-08-03T08:50:00+2
 description: "or, the tale of a funky write-up"
 tags:
     - security
@@ -89,3 +89,7 @@ i also verified this one myself by checking the bucket (`kick-files-prod`) conte
 > Or you know, [self host your streams..](https://owncast.online/)"
 
 i definitely agree with this sentiment. i am also very curious regarding further trivially found vulerabilities (including the ones teased in the write-up), and im hopeful this write-up and my blog post can inspire some more interesting security research on kick.com, making it at the very least somewhat more secure hopefully. morally i also fully agree that trusting a platform which primarily exists to promote gambling and gambling content, owned by one of the biggest players in that industry, is foolish, no matter how good their creator payouts may be. this is further evidenced by how the only channels i saw ever having more than maybe 2000 viewers on kick during this investigation were famous gambling content creators, no other category ever seemed to garner much views. 
+
+### update (aug. 3, 08:50 UTC)
+
+it appears that kick has deployed mitigations for message fabrication, s3 file listing remains unfixed (despite being the easiest thing to fix), from which i can only conclude that they do not consider information leakage to be of high severity.
