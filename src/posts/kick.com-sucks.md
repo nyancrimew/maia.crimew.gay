@@ -1,7 +1,7 @@
 ---
 title: "kick.com sucks - a brief security overview"
 date: 2023-08-02T18:20:00+2
-changed_date: 2023-08-03T10:50:00+2
+changed_date: 2023-08-03T18:55:00+2
 description: "or, the tale of a funky write-up"
 tags:
     - security
@@ -93,3 +93,7 @@ i definitely agree with this sentiment. i am also very curious regarding further
 ### update (aug. 3, 08:50 UTC)
 
 it appears that kick has deployed mitigations for message fabrication, s3 file listing remains unfixed (despite being the easiest thing to fix), from which i can only conclude that they do not consider information leakage to be of high severity.
+
+### update 2 (aug. 3, 17:00 UTC)
+
+so it turns out they have not actually really fixed shit, pin based fabrication still works, the only mitigation that has been done is turning off persistence for ALL pins (real or fake), meaning they disappear on refresh. both real and fake pins are however still distributed to all viewers at the time of posting.
