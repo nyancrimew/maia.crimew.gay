@@ -1,6 +1,7 @@
 ---
 title: "#FuckStalkerware pt. 3 - ownspy got, well, owned"
 date: 2023-08-25
+changed_date: 2023-09-13
 description: "more like ownedspy amiright"
 feature_image: /img/posts/fuckstalkerware-3/cover.jpg
 feature_alt: "screenshot of the start of a file called README.txt, there is big ascii textart reading 'ownedspy', and text below reads 'ownspy is REALLY REALLY owned!!! #fuckstalkerware #antisec #acab' and 'The #fuckstalkerware games continue. Another one bites the dust.'"
@@ -176,7 +177,7 @@ the release message then ends here in "Greetz to LeopardBoy and the Decepticons.
 
 other than the write-up the package i was sent contained a text file with all device ids, a text file with users listed in `<email>:<hashed password>` format (hi and welcome to my blog post troy hunt), as well as the raw admin portal and isreg scraping results, containing additional user data, some info on target device (phone type, os version, ownspy version), all user sign in IPs and dates and payment history. i have decided to republish this data as is, i have no interest in protecting stalkers and given victim data has been deleted there is little risk of direct additional compromises.
 
-**ownedspy.zip (ZIP, 151405 files, 368MB), available as a [torrent](/files/posts/fuckstalkerware-3/ownedspy.zip.torrent) ([magnet](magnet:?xt=urn:btih:cf0cc9cd6dae802d2bf415ccb4cc9b29c32a04f0&dn=ownedspy.zip))**
+**ownedspy.zip (ZIP, 151405 files, 368MB), previously available as a torrent**
 
 ## basic analysis
 
