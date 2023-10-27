@@ -8,14 +8,14 @@
         "update": "git pull && npm i && npm run build"
     },
     "dependencies": {
-        "@11ty/eleventy": "^v2.0.0-beta.1",
+        "@11ty/eleventy": "^v2.0.1",
         "@11ty/eleventy-plugin-rss": "^1.2.0",
-        "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
-        "@11tyrocks/eleventy-plugin-sass-lightningcss": "^1.0.3",
+        "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+        "@11tyrocks/eleventy-plugin-sass-lightningcss": "^1.1.0",
         "@sardine/eleventy-plugin-external-links": "^1.4.0",
         "eleventy-plugin-related": "^1.0.6",
         "eleventy-plugin-time-to-read": "^1.3.0",
-        "markdown-it": "^13.0.1",
+        "markdown-it": "^13.0.2",
         "markdown-it-anchor": "^8.6.7"
     }
 }
