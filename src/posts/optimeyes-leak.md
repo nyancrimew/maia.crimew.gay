@@ -14,7 +14,7 @@ feature_alt: "a screenshot of a 4chan leak release post"
 
 yesterday evening an anonymous 4chan user dumped a leak on the /g/ technology board, claiming to have completely owned risk visualization company [optimeyes](https://optimeyes.ai):
 
-<blockquote>
+<blockquote class="greentext">
 <span class="greentext">> be cyber security risk assessment company</span></br>
 <span class="greentext">> focus on intellectual property theft</span></br>
 <span class="greentext">> dont secure ur own systems at all</span></br>

@@ -33,7 +33,7 @@ i am informed that the US government has charged me for "conspiracy, wire fraud,
 
 less than a week later i wake up to hundreds of dms and massive chaos on social media, i am once again going through a news cycle, the third time in just two weeks. my US indictment has been unsealed and there is a big press release on the justice.gov website.
 
-> “A cyber-criminal could be anywhere in the world.  Thanks to our foreign partnerships, international borders won't provide a haven for their illegal activities,” said Donald Voiret, FBI Special Agent in Charge, Seattle.  “This indictment demonstrates the FBI’s commitment to working with our partners around the globe to disrupt and dismantle criminal enterprises that target Americans and their businesses.”
+> A cyber-criminal could be anywhere in the world.  Thanks to our foreign partnerships, international borders won't provide a haven for their illegal activities,” said Donald Voiret, FBI Special Agent in Charge, Seattle.  “This indictment demonstrates the FBI’s commitment to working with our partners around the globe to disrupt and dismantle criminal enterprises that target Americans and their businesses.
 
 i have been made an example.
 
