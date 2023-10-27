@@ -1,6 +1,6 @@
 const cache = new Map();
 
-module.exports = ({ path, check_path = 'src/static/' + path, type = "css"  }) => {
+module.exports = async ({ path, check_path = 'src/static/' + path, type = "css"  }) => {
     // caching hashes significantly speeds up build time
     var hash = undefined;
     if (cache.get(check_path)) {

@@ -40,12 +40,12 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({ "src/static": "/" });
 
-  eleventyConfig.addFilter("date_to_datetime", (obj) => {
+  eleventyConfig.addFilter("date_to_datetime", async (obj) => {
     const date = parseDate(obj);
     return date.toISOString();
   });
 
-  eleventyConfig.addFilter("date_formatted", (obj) => {
+  eleventyConfig.addFilter("date_formatted", async (obj) => {
     const date = parseDate(obj);
 
     const month = formatPart({ month: "short" }, date);
@@ -55,18 +55,18 @@ module.exports = function (eleventyConfig) {
     const minutes = date.getUTCMinutes();
 
     if (hours != 0 && minutes != 0) {
-
       return `${month} ${day}, ${year} - ${hours}:${minutes} UTC`;
     }
 
     return `${month} ${day}, ${year}`;
   });
 
-  eleventyConfig.addFilter('urlescape', str => {
+  eleventyConfig.addFilter('urlescape', async str => {
     return str.split('/').map(part => encodeURI(part)).join('/')
   });
 
-  eleventyConfig.addFilter("related", function(obj) {
+  // TODO: possibly turn this into a post processing step instead of a filter (or at least make it a shortcode)
+  eleventyConfig.addFilter("related", async function(obj) {
     const post = this.ctx;
     const posts = this.ctx.collections.posts.map(post => post.data);
 

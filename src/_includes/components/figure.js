@@ -1,7 +1,12 @@
-module.exports = (md) => ({ src, alt, caption = '' }) => `
+module.exports = (md) => async ({ src, alt, caption = '', type = 'img' }) => `
   <figure>
     <div>
-      <img src="${src}" alt="${alt}" />
+    ${
+      type == 'video' ? 
+`<video controls onloadstart="this.volume=0.5">
+  <source src="${src}" type="video/mp4">
+</video>` : `<img src="${src}" alt="${alt}" />`
+    }
     </div>
     ${caption ? `<figcaption>${md.renderInline(caption)}</figcaption>` : ''}
   </figure>
