@@ -67,11 +67,52 @@ footer,
 }
 
 #content {
-  max-width: 900px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 2em;
   padding-bottom: 2em;
+}
+
+table {
+  display: block;
+  overflow-x: auto;
+  border-collapse: collapse;
+  white-space: nowrap;
+  border: none;
+
+  th, td {
+    border: 1px solid;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    text-align: center;
+  }
+
+  th, tr td:first-child {
+    border: 1.5px solid;
+    background-color: $semi-bg;
+    font-weight: bold;
+  }
+
+  th {
+    border-top: none;
+  }
+
+  tr {
+    th, td:first-child {
+      border-left: none;
+    }
+
+    td, th:last-child {
+      border-right: none;
+    }
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+  }
 }
 
 .byline {

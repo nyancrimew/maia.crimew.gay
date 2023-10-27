@@ -9,6 +9,7 @@ tags:
     - politics
     - hack
     - far right
+    - osint
 ---
 
 earlier this year, [the popular far right fediverse instance poast was hacked](https://www.dailydot.com/debug/leak-poast-kiwi-farms/) leaking user profiles with emails, posts and DMs. today i was sent a special little treat, [a singular html file](/files/posts/meet-the-shitpoasters/meet-the-shitpoasters.html) containing all the poa.st and bae.st profiles with linkedin profiles associated to their e-mail addresses, all their linkedin info, their top 5 worst posts as ranked by sentiment analysis and their DMs. i will leave proper in depth analysis of this data to extremism researchers and journalists, but a few interesting people i can find at a glance are:
