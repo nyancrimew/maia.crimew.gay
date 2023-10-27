@@ -8,6 +8,7 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 
 const figure = require('./src/_includes/components/figure.js');
+const bounce = require('./src/_includes/components/bounce.js');
 
 module.exports = function (eleventyConfig) {
   const parseDate = (str) => {
@@ -35,6 +36,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventySass);
 
   eleventyConfig.addShortcode('figure', figure(md));
+  eleventyConfig.addShortcode('bounce', bounce);
 
   eleventyConfig.addPassthroughCopy({ "src/static": "/" });
 
