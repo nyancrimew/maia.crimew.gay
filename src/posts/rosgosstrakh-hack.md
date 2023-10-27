@@ -18,8 +18,7 @@ after taking a two month long hiatus (for mental health reasons, nothing to get 
 
 [rosgosstrakh (RGSL/росгосстрах)](https://en.wikipedia.org/wiki/Rosgosstrakh) is the second biggest russian insurance company, behind [SOGAZ](https://en.wikipedia.org/wiki/Sogaz) with an annual revenue of around 90 billion rubles ([2022](https://www.reuters.com/markets/companies/rgss.mm/financials/income-annual)). RGSL has been [subject to US sanctions](https://www.hstoday.us/subject-matter-areas/intelligence/new-sanctions-top-ten-russian-financial-institutions-now-under-u-s-restrictions/) since the start of the russian invasion of ukraine in february 2022. my source gained full access to their investment and life insurance department with data going back to 2010, giving them full access to ~3 million bank statements, data on 730k people/holders (around 80k of which with SNILS (russian ssn) and another 45k with full bank routing info), and all life insurance policies/contracts. they are also able to access all attachments to the former data, such as passports and scanned documents (i was only provided with a small selection of this data, but all of it is included in the purchasable dataset). the source further claims that they most likely have the ability to authorize and create bank transfers if they wanted to do so.
 
-![two screenshots of the adinsure software used by RGS](/img/posts/rosgosstrakh-hack/adinsure.jpg)
-two screenshots of the [adinsure](https://www.adacta-fintech.com/platform) software used by RGS captured by the hackers during the attack
+{% figure { src: '/img/posts/rosgosstrakh-hack/adinsure.jpg', alt: 'two screenshots of the adinsure software used by RGS', caption: 'two screenshots of the [adinsure](https://www.adacta-fintech.com/platform) software used by RGS, captured by the hackers during the attack' } %}
 
 ## analysis
 

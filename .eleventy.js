@@ -7,6 +7,8 @@ const related = require("eleventy-plugin-related");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 
+const figure = require('./src/_includes/components/figure.js');
+
 module.exports = function (eleventyConfig) {
   const parseDate = (str) => {
     if (str instanceof Date) {
@@ -23,13 +25,16 @@ module.exports = function (eleventyConfig) {
     trimBlocks: true
   });
 
-  eleventyConfig.setLibrary("md", markdownIt({ "html": true }).use(markdownItAnchor, { "level": 2 }));
+  const md = markdownIt({ "html": true }).use(markdownItAnchor, { "level": 2 });
+  eleventyConfig.setLibrary("md", md);
 
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(timeToRead);
   eleventyConfig.addPlugin(safeLinks);
   eleventyConfig.addPlugin(eleventySass);
+
+  eleventyConfig.addShortcode('figure', figure(md));
 
   eleventyConfig.addPassthroughCopy({ "src/static": "/" });
 
