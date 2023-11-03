@@ -9,6 +9,7 @@ tags:
     - osint
     - research
     - memes
+    - culture
 ---
 
 > [this blog post was originally a tumblr post](https://www.tumblr.com/nyancrimew/719391254132195328/entirely-unrelated-to-the-actual-posts-above-but), inline links are sources
