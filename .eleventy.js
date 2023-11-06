@@ -1,16 +1,20 @@
+const path = require("node:path");
+
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const timeToRead = require('eleventy-plugin-time-to-read');
 const safeLinks = require('@sardine/eleventy-plugin-external-links');
-const eleventySass = require("@11tyrocks/eleventy-plugin-sass-lightningcss");
 const related = require("eleventy-plugin-related");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const sass = require("sass");
 
 const figure = require('./src/_includes/components/figure.js');
 const bounce = require('./src/_includes/components/bounce.js');
 
 module.exports = function (eleventyConfig) {
+  const isDev = (process.env.ELEVENTY_ENV || "dev") == "dev";
+
   const parseDate = (str) => {
     if (str instanceof Date) {
       return str;
@@ -33,19 +37,27 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(timeToRead);
   eleventyConfig.addPlugin(safeLinks);
-  eleventyConfig.addPlugin(eleventySass);
 
   eleventyConfig.addShortcode('figure', figure(md));
   eleventyConfig.addShortcode('bounce', bounce);
 
   eleventyConfig.addPassthroughCopy({ "src/static": "/" });
+  eleventyConfig.addPassthroughCopy({ "node_modules/reveal.js/dist/reveal.css": "reveal.js/reveal.css" });
+  eleventyConfig.addPassthroughCopy({ "node_modules/reveal.js/dist/reveal.esm.js": "reveal.js/reveal.esm.js" });
+  eleventyConfig.addPassthroughCopy({ "node_modules/reveal.js/plugin/markdown/markdown.esm.js": "reveal.js/plugin/markdown/markdown.esm.js" });
 
   eleventyConfig.addFilter("date_to_datetime", async (obj) => {
+    if (!obj) {
+      return "";
+    }
     const date = parseDate(obj);
     return date.toISOString();
   });
 
   eleventyConfig.addFilter("date_formatted", async (obj) => {
+    if (!obj) {
+      return "";
+    }
     const date = parseDate(obj);
 
     const month = formatPart({ month: "short" }, date);
@@ -92,6 +104,38 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection('posts', collection => {
     return collection.getFilteredByGlob('src/posts/*.md').reverse()
   });
+
+  eleventyConfig.addCollection('decks', collection => {
+    return collection.getFilteredByGlob('src/decks/*.md')             
+    // append the raw content
+    .map(item => {
+      const content = item.template.frontMatter.content;
+      item.data.rawMarkdown = content || "";
+      return item;
+    });
+  });
+
+  eleventyConfig.addTemplateFormats("scss");
+  eleventyConfig.addExtension("scss", {
+    outputFileExtension: "css",
+    
+    compile: function (inputContent, inputPath) {
+      let parsed = path.parse(inputPath);
+
+      let result = sass.compileString(inputContent, {
+        style: isDev ? "expanded" : "compressed",
+        loadPaths: [
+          parsed.dir || "."
+       ]
+      });
+
+      this.addDependencies(inputPath, result.loadedUrls);
+
+      return async (data) => {
+        return result.css;
+      };
+    }
+  })
 
   return {
     templateFormats: ["njk", "md", "html"],

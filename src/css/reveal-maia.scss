@@ -1,0 +1,40 @@
+/**
+ * maia site theme for reveal.js. 
+ */
+
+@import "../_includes/scss/mixins";
+@import "../_includes/scss/settings";
+@import "../_includes/scss/colors.scss";
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: $bg;
+
+$mainColor: $text;
+$headingColor: $text;
+
+$mainFontSize: 30px;
+$mainFont: monospace, serif, sans-serif;
+$headingFont: monospace, serif, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: normal;
+$headingFontWeight: 600;
+$linkColor: $accent;
+$linkColorHover: $active-links;
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+$overlayElementBgColor: 0, 0, 0;
+$overlayElementFgColor: 240, 240, 240;
+
+// Change text colors against dark slide backgrounds
+@include dark-bg-text-color(#fff);
+
+
+// Theme template ------------------------------
+@import "../_includes/scss/theme";
+// ---------------------------------------------

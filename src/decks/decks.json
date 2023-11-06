@@ -1,0 +1,4 @@
+{
+    "layout": "layouts/deck",
+    "permalink": "decks/{{ page.fileSlug }}/blank.html"
+}
