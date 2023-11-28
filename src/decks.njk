@@ -26,13 +26,17 @@ permalink: /decks/{{ pagination.items[0].fileSlug }}/index.html
         
         {% bounce { path: '/reveal.js/reveal.css', check_path: 'node_modules/reveal.js/dist/reveal.css' } %}
         {% bounce { path: '/css/reveal-maia.css', check_path: 'src/css' } %}
+        <!-- TODO: custom code theme -->
+        {% bounce { path: '/reveal.js/plugin/highlight/monokai.css', check_path: 'node_modules/reveal.js/plugin/highlight/monokai.css' } %}
 
         <script type="module">
             import Reveal from '/reveal.js/reveal.esm.js';
             import Markdown from '/reveal.js/plugin/markdown/markdown.esm.js';
+            import RevealHighlight from '/reveal.js/plugin/highlight/highlight.esm.js';
+            import RevealNotes from '/reveal.js/plugin/notes/notes.esm.js';
 
             let deck = new Reveal({
-                plugins: [ Markdown ],
+                plugins: [ Markdown, RevealHighlight, RevealNotes ],
                 hash: true,
                 controlsTutorial: false
             })

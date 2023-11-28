@@ -45,6 +45,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "node_modules/reveal.js/dist/reveal.css": "reveal.js/reveal.css" });
   eleventyConfig.addPassthroughCopy({ "node_modules/reveal.js/dist/reveal.esm.js": "reveal.js/reveal.esm.js" });
   eleventyConfig.addPassthroughCopy({ "node_modules/reveal.js/plugin/markdown/markdown.esm.js": "reveal.js/plugin/markdown/markdown.esm.js" });
+  eleventyConfig.addPassthroughCopy({ "node_modules/reveal.js/plugin/highlight/highlight.esm.js": "reveal.js/plugin/highlight/highlight.esm.js" });
+  eleventyConfig.addPassthroughCopy({ "node_modules/reveal.js/plugin/highlight/monokai.css": "reveal.js/plugin/highlight/monokai.css" });
+  eleventyConfig.addPassthroughCopy({ "node_modules/reveal.js/plugin/notes/notes.esm.js": "reveal.js/plugin/notes/notes.esm.js" });
 
   eleventyConfig.addFilter("date_to_datetime", async (obj) => {
     if (!obj) {
