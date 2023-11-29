@@ -36,22 +36,32 @@ title: "#FuckStalkerware at ETH"
 
 ## what did it do for the rest of this year
 
-* published thousands of emails revealing the secret working group is behind most anti-trans legislation
-* reported on various hacks done by other actors <!-- .element: class="fragment" -->
+* published thousands of emails revealing the secret US based working group behind much of current international anti-trans legislation
+* reported on various hacks by other actors <!-- .element: class="fragment" -->
     * a cybersecurity company pwned by a random 4chan user <!-- .element: class="fragment" -->
     * kittensec leaking romanian and EU government data <!-- .element: class="fragment" -->
-    * a write up on various security issues in the streaming platform kick <!-- .element: class="fragment" -->
-    * an exclusive report on how rossgostrakh got hacked <!-- .element: class="fragment" -->
+    * a write up on various security issues in the streaming platform kick.com <!-- .element: class="fragment" -->
+    * an exclusive report on how rosgosstrakh got hacked <!-- .element: class="fragment" -->
 ---
 <!-- .slide: data-auto-animate -->
 ## what did it do for the rest of this year
 
 * investigative internet pop culture journalism
-    * on an ifunny clone that actually isn't what it seems at all <!-- .element: class="fragment" -->
-    * how a popular tiktok meme account has a dark past and connections to far right cults <!-- .element: class="fragment" -->
+    * an ifunny clone that isn't actually what it seems at all <!-- .element: class="fragment" -->
+    * how a popular tiktok meme account has a dark past and connections to the far right <!-- .element: class="fragment" -->
 * guested on various political and pop culture podcasts <!-- .element: class="fragment" -->
 * various other media work <!-- .element: class="fragment" -->
-* <!-- .element: class="fragment" --> started the <b>#FuckStalkerware</b> project to help combat stalkerware and get and insight into the industry 
+* <!-- .element: class="fragment" --> started the <b>#FuckStalkerware</b> project to help combat stalkerware and get an insight into the industry 
+
+Note:
+pocasts such as well there's your problem, the worst of all possible worlds, red planet and many more
+
+media work both giving interviews and portraits about myself and acting as an expert on various topics
+---
+## let's cover some basics
+
+* what's hacktivism<!-- .element: class="fragment" -->
+* what is my motivation<!-- .element: class="fragment" -->
 
 ---
 <!-- .slide: data-background-image="/img/posts/fuckstalkerware-0/cover.jpg" data-background-opacity="0.2" data-auto-animate data-auto-animate-restart -->
@@ -68,7 +78,7 @@ title: "#FuckStalkerware at ETH"
     * "parental control" <!-- .element: class="fragment" -->
     * figuring out if your partner is cheating on you<!-- .element: class="fragment" -->
 * hidden from the target, often pretends to be system application<!-- .element: class="fragment" -->
-* usually requires brief physical access, can be remote installed<!-- .element: class="fragment" -->
+* usually requires brief physical access, can be remotely installed<!-- .element: class="fragment" -->
 
 ---
 <!-- .slide: data-background-image="/img/posts/fuckstalkerware-0/cover.jpg" data-background-opacity="0.2" data-auto-animate -->
@@ -220,7 +230,7 @@ if(!in_array($ext,$allowed) ) {
 
 * over 230gb of exfiltrated data<!-- .element: class="fragment" -->
   * source code, databases<!-- .element: class="fragment" -->
-  * photos, calls, messages, geolocation and ambient audio recordings from phones<!-- .element: class="fragment" -->
+  * photos, calls and ambient audio recordings from phones<!-- .element: class="fragment" -->
 * some account owners have spied on as much as 30 different devices over the course of multiple years, stalking some people accross multiple phone changes<!-- .element: class="fragment" -->
 * dataset actually makes it somewhat possible to identify victims, containing some imeis and phone numbers<!-- .element: class="fragment" -->
 
@@ -251,12 +261,12 @@ based on code analysis data is only deleted when operator stops paying.
 ## example: SpyHide
 ### analysis
 
-<img src="/img/decks/fuckstalkerware/spyhide-gps-world.jpg"/>
+<img src="/img/decks/fuckstalkerware/spyhide-gps-world.jpg"  class="r-stretch"/>
 
 *image credit:* [TechCrunch](https://techcrunch.com/2023/07/24/spyhide-stalkerware-android/)
 
 Note:
-a map of all recorded gps location data points in the dataset, showing spyhide being used all over the world with hotspots in europa, brazil and the US
+a map of all recorded gps location data points in the dataset, showing spyhide being used all over the world with hotspots in europa, brazil, indonesia and the US
 ---
 <!-- .slide: data-background-image="/img/posts/fuckstalkerware-2/cover.jpg" data-background-opacity="0.2" data-auto-animate -->
 
