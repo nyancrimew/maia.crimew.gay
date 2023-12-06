@@ -4,7 +4,7 @@ subhead: blog
 pagination:
   data: collections.posts
   addAllPagesToCollections: true
-  size: 10
+  size: 20
 permalink: /posts/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber }}/{% endif %}index.html
 ---
 {% extends 'layouts/default.njk' %}
