@@ -261,7 +261,7 @@ based on code analysis data is only deleted when operator stops paying.
 ## example: SpyHide
 ### analysis
 
-<img src="/img/decks/fuckstalkerware/spyhide-gps-world.jpg"  class="r-stretch"/>
+<img src="/img/decks/fuckstalkerware/spyhide-gps-world.jpg" class="r-stretch"/>
 
 *image credit:* [TechCrunch](https://techcrunch.com/2023/07/24/spyhide-stalkerware-android/)
 
