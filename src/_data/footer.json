@@ -1,19 +1,23 @@
 {
   "links": [
     {
-      "name": "rss feed",
+      "name": "atom/rss feed",
       "link": "https://maia.crimew.gay/feed.xml"
     },
     {
       "name": "tumblr",
-      "link": "https://nyancrimew.tumblr.com"
+      "link": "https://tumblr.com/nyancrimew"
     },
     {
-      "name": "fedded verse",
+      "name": "twitter",
+      "link": "https://twitter.com/awawawhoami"
+    },
+    {
+      "name": "fediverse",
       "link": "https://crimew.gay/maia"
     },
     {
-      "name": "sounded cloud",
+      "name": "soundcloud",
       "link": "https://soundcloud.com/nyancrimew"
     },
     {
@@ -21,20 +25,12 @@
       "link": "https://last.fm/user/nyancrimew"
     },
     {
-      "name": "gitted hub",
+      "name": "github",
       "link": "https://github.com/nyancrimew"
-    },
-    {
-      "name": "gitted tea",
-      "link": "https://git.lavender.software/nyancrimew"
     },
     {
       "name": "ko-fi",
       "link": "https://ko-fi.com/nyancrimew"
-    },
-    {
-      "name": "reddit",
-      "link": "https://reddit.com/u/nyancrimew"
     },
     {
       "name": "analytics",
@@ -141,6 +137,11 @@
       "alt": "ilwag.com",
       "title": "cute lil tunes :3",
       "link": "https://ilwag.com"
+    },
+    {
+      "badge": "solely.png",
+      "alt": "solely",
+      "link": "https://arciniega.one"
     }
   ]
 }
