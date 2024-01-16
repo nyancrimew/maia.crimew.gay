@@ -8,6 +8,10 @@
         "link": "/posts/"
     },
     {
+        "name": "citations",
+        "link": "/citations/"
+    },
+    {
         "name": "contact",
         "link": "/contact/"
     },

@@ -1,0 +1,29 @@
+---
+title: maia academic citations :3
+subhead: academic citations
+permalink: /citations/index.html
+date: git Last Modified
+---
+{% extends 'layouts/default.njk' %}
+{% block main %} 
+    <p>a collection of various academic mentions of me and my work, if you have
+      also cited my work in a paper but it isn't on this list yet feel free to <a href="/contact/">contact me</a></p>
+    <div>
+      <ul>
+        {% for citation in citations %}
+        <li class="list-entry">
+          <h3><a href="{{ citation.link }}">{{ citation.title }}</a>{% if citation.pdf %} (<a href="{{ citation.pdf }}">pdf</a>){% endif %}</h3>
+          <div class="byline">
+            <span>published <span class="year">{{ citation.year }}</span></span>
+            <span class="middot"></span>
+            <span>by <span class="author by" id="author">{{ citation.authors }}</span></span>
+            {% if citation.doi %}
+                <span class="middot"></span>
+                <span><a href="{{ citation.doi }}"><code>{{ citation.doi }}</code></a></span>
+            {% endif %}
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+{% endblock %}

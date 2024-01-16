@@ -61,7 +61,7 @@ footer,
 .list-entry {
   list-style-type: none;
 
-  h2 {
+  h2, h3 {
     margin-bottom: 0;
   }
 }
@@ -126,7 +126,8 @@ table {
 
 time,
 .author,
-.updated {
+.updated,
+.year {
   font-weight: bold;
 }
 
