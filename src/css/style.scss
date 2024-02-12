@@ -188,30 +188,29 @@ blockquote {
   background-color: $semi-bg;
   border-left: 3px solid $accent;
   padding: .5em .5em;
-  quotes: "\201C""\201D""\2018""\2019";
 
   p {
     display: inline;
     margin-top: 0;
     line-height: 1.4em;
+    position: relative;
+    font-style: italic;
+  }
+
+  span{
+    display:block;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: .2em;
   }
 }
 
 blockquote:before {
   color: $accent;
-  content: open-quote;
+  content: "\201C";
   font-size: 4em;
   line-height: 0;
   margin-right: 1px;
-  vertical-align: -0.4em;
-}
-
-blockquote:after {
-  color: $accent;
-  content: close-quote;
-  font-size: 4em;
-  line-height: 0;
-  margin-left: 1px;
   vertical-align: -0.4em;
 }
 
