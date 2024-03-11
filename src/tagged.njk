@@ -28,7 +28,7 @@ date: git Last Modified
               <small class="updated">(updated <time datetime="{{ entry.data.changed_date | date_to_datetime }}">{{ entry.data.changed_date | date_formatted }}</time>)</small>
           {% endif %}
           <span class="middot"></span>
-          <span>by <span class="author by" id="author">{{ site.name }}</span></span>
+          <span>by <span class="author by" id="author">{{ site.name }}</span>{% if entry.data.coauthor %} and <span class="author by" id="author">{{ entry.data.coauthor.name }}</span>{% endif %}</span>
           {% if entry.data.tags %}
               <span class="middot"></span>
               <span>in 

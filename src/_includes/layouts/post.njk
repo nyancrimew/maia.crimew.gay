@@ -16,7 +16,7 @@ subhead: blog
                 <span class="middot"></span>
                 <span class="readtime">{{ content | timeToRead }} to read</span>
                 <span class="middot"></span>
-                <span>by <span class="author by" id="author">{{ site.name }}</span></span>
+                <span>by <span class="author by" id="author">{{ site.name }}</span>{% if coauthor %} and <a class="author by" id="author" href="{{ coauthor.link }}">{{ coauthor.name }}</a>{% endif %}</span>
                 {% if tags %}
                     <span class="middot"></span>
                     <span>in 
