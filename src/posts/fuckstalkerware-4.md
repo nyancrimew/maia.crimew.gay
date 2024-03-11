@@ -6,6 +6,8 @@ feature_image: /img/posts/fuckstalkerware-4/cover.jpg
 feature_alt: "a glitchy edited very pink collage of various marketing images for TheTruthSpy with their logo diagonally in the center"
 tags:
     - "#FuckStalkerware"
+    - shady business
+    - investigation
     - stalkerware
     - research
     - analysis

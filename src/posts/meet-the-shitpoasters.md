@@ -25,7 +25,7 @@ earlier this year, [the popular far right fediverse instance poast was hacked](h
 - ~~a self proclaimed "national socialist" who's a professor at gardner-webb university~~
 - just sooo many people in the tech industry
 
-### correction
+## correction
 
 after some feedback regarding potential false positives in the list, the source of the compiled document asked me to publish the following correction: "Upon further research, Richard (Shawn) Carmichael aka psychosis67 is not a professor at Gardner-Webb University, but an IT guy from Humboldt, Iowa who impersonated the university professor from North Carolina with the same name on his now deleted LinkedIn profile.", a formal apology has been sent to the professor. furthermore we found that user bluj162 was also mapped wrong (to the chief operating officer of a school district), research here however shows that bluj162 is the son of J. Sanchez of Palm Beach (who i presume managed his dads LinkedIn?).
 
