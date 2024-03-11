@@ -72,6 +72,7 @@ footer,
   margin-right: auto;
   padding-top: 2em;
   padding-bottom: 2em;
+  counter-reset: footnotes;
 }
 
 table {
@@ -292,4 +293,48 @@ blockquote.greentext::after {
 .sleepy-zone-webring-next-site a::after {
   content: "→";
   margin-inline-start: 1ch;
+}
+
+/**
+ * Inline footnotes references
+ * 1. Increment the counter at each new reference
+ * 2. Reset link styles to make it appear like regular text
+ */
+a[aria-describedby="footnotes-label"] {
+  counter-increment: footnotes; /* 1 */
+  text-decoration: none; /* 2 */
+  color: inherit; /* 2 */
+  cursor: default; /* 2 */
+  outline: none; /* 2 */
+}
+
+/**
+ * Actual numbered references
+ * 1. Display the current state of the counter (e.g. `[1]`)
+ * 2. Align text as superscript
+ * 3. Make the number smaller (since it's superscript)
+ * 4. Slightly offset the number from the text
+ * 5. Reset link styles on the number to show it's usable
+ */
+a[aria-describedby="footnotes-label"]::after {
+  content: '[' counter(footnotes) ']'; /* 1 */
+  vertical-align: super; /* 2 */
+  font-size: 0.85em; /* 3 */
+  margin-left: 2px; /* 4 */
+  color: $accent; /* 5 */
+  text-decoration: underline; /* 5 */
+  cursor: pointer; /* 5 */
+}
+
+/**
+ * Resetting the default focused styles on the number
+ */
+a[aria-describedby="footnotes-label"]:focus::after {
+  outline: thin dotted;
+  outline-offset: 2px;
+}
+
+.footnotes {
+  text-align: unset;
+  padding-top: initial;
 }

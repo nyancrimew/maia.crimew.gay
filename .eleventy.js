@@ -8,6 +8,7 @@ const related = require("eleventy-plugin-related");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const sass = require("sass");
+const footnotes = require('eleventy-plugin-footnotes');
 
 const figure = require('./src/_includes/components/figure.js');
 const bounce = require('./src/_includes/components/bounce.js');
@@ -37,6 +38,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(timeToRead);
   eleventyConfig.addPlugin(safeLinks);
+  eleventyConfig.addPlugin(footnotes, {
+    "title": "footnotes",
+    "baseClass": "footnotes"
+  });
 
   eleventyConfig.addShortcode('figure', figure(md));
   eleventyConfig.addShortcode('bounce', bounce);
