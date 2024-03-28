@@ -85,6 +85,10 @@ module.exports = function (eleventyConfig) {
     return str.split('/').map(part => encodeURI(part)).join('/')
   });
 
+  eleventyConfig.addFilter('md_inline', async str => {
+    return md.renderInline(str);
+  });
+
   // TODO: possibly turn this into a post processing step instead of a filter (or at least make it a shortcode)
   eleventyConfig.addFilter("related", async function(obj) {
     const post = this.ctx;

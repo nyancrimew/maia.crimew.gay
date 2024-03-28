@@ -6,7 +6,14 @@ subhead: blog
     <article>
         <header class="article_header">
             {% if feature_image %}
-                <img src="{{ feature_image }}" alt="{{ feature_alt if feature_alt else "feature image for '" + title + "'" }}" style="padding-bottom: 10px;" height="auto" width="75%" layout="responsive"/>
+            <figure id="feature">
+                <div>
+                    <img src="{{ feature_image }}" alt="{{ feature_alt if feature_alt else "feature image for '" + title + "'" }}"/>
+                </div>
+                {% if feature_caption %}
+                    <figcaption>{{ feature_caption | md_inline | safe }}</figcaption>
+                {% endif %}
+            </figure>
             {% endif %}
             <div class="byline">
                 <time datetime="{{date | date_to_datetime }}">{{ date | date_formatted }}</time>
