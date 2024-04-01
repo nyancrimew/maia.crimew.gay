@@ -54,6 +54,6 @@ oh and before any of you get scared, no i am not becoming yet another shitty bug
 * **2024-02-14:** more in-depth report sent to Samsung Mobile Security
 * **2024-02-15:** Samsung security analysis begins
 * **2024-02-20:** Samsung Mobile Security updates the report, confirming severity as *High*
-* **2024-02-23:** {% footnoteref "samsung-early-access", "this did not influence the contents of this article and no changes were requested or made beyond removing mentions of the specificy bounty reward amount" %}Samsung is provided with a draft of this article{% endfootnoteref %} 
+* **2024-02-23:** {% footnoteref "samsung-early-access", "this did not influence the contents of this article and no changes were requested or made beyond removing mentions of the specific bounty reward amount" %}Samsung is provided with a draft of this article{% endfootnoteref %} 
 * **2024-03-04:** i am awarded a bounty by Samsung based on a not yet public server vulnerability bounty policy
 * **2024-04-01:** this write-up is published and the issue publicly disclosed
