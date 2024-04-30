@@ -319,7 +319,7 @@ a[aria-describedby="footnotes-label"] {
 a[aria-describedby="footnotes-label"]::after {
   content: '[' counter(footnotes) ']'; /* 1 */
   vertical-align: super; /* 2 */
-  font-size: 0.85em; /* 3 */
+  font-size: 0.6em; /* 3 */
   margin-left: 2px; /* 4 */
   color: $accent; /* 5 */
   text-decoration: underline; /* 5 */
