@@ -1,0 +1,34 @@
+---
+title: "#FuckStalkerware pt. 5 - déjà vu? OwnSpy pwned again"
+date: 2024-05-07
+description: reporting on stalkerware feels like being trapped in a timeloop
+feature_image: /img/posts/fuckstalkerware-5/cover.jpg
+feature_alt: a glitchy pink illustration of a y2k-/cyberpunk-style stalkerware dashboard with a y2k-style WebDetetive logo in the top left and crosshairs drawn over the whole image
+feature_caption: feature art by [Mukky's World](https://mukkysworld.neocities.org/)
+tags:
+  - "#FuckStalkerware"
+  - stalkerware
+  - research
+  - analysis
+  - leak
+  - exploit
+  - security
+content_warnings:
+  - mentions of abuse/controlling behaviour
+---
+
+y'know, after the [TruthSpy](/posts/fuckstalkerware-4/) saga earlier this year i shouldn't be surprised anymore when stalkerware companies get hacked the same way two or three times, but i didnt expect to have to already write a followup to the [third article in this series](/posts/fuckstalkerware-3/). but here we are: an anonymous source [tipped me off](/contact) about another way to access the administration portal discussed in the [writeup](/files/posts/fuckstalkerware-3/README.txt) by the original hacker.
+  
+in the original hack last summer, my source managed to access an administration portal for {% footnoteref "portuguese-exists", "realizing the company is called WebDetetive (you know, in portuguese, the language they speak in brazil) and not WebDete<b>c</b>tive a bit earlier would've made my research for this piece significantly faster and easier, but would've unfortunately also required reading skills" %}WebDetetive{% endfootnoteref %} (a whitelabelled version of OwnSpy for the brazilian market) using a convoluted multi-step process involving [SQL injection](https://en.wikipedia.org/wiki/SQL_injection) and cookie reuse. and while those vulnerabilities seem to be fixed now—with one of the servers targeted in the original attack still being offline—there was an easier way into the `admin.webdetetive.com.br` panel all along. the anonymous tipper for this story, looking into the panel from the old write-up, simply guessed some commonly used URLs. and after a bit of brute-forcing for a signup page, they found this:
+
+![a screenshot of a signup form at admin.webdetetive.com.br/signup.php. it is entitled "sign up OwnSpy affiliate network"](/img/posts/fuckstalkerware-5/signup.jpg)
+  
+it really is that easy: you sign up using the form and immediately gain access to the admin portal. the frontend looks fairly similar to the OwnSpy affiliate network dashboard, with many pages having been simply copied over, which probably resulted in the accidental inclusion of the registration page. a key difference to the affiliate dashboard, however, is that the admin portal shows you the personal information of all customers on the service.
+
+the "API Log" page, for example, shows a list of actions performed by and on user accounts, including signups, credit recharges, device activations, and account deletions. clicking on an email address in this log shows all customer and target device info, letting you perform various actions on the account, such as extending licenses, disconnecting devices or accessing the stalkerware dashboard as the customer for troubleshooting. the latter, in fact, actually allows us to confirm (for once) a claim that tends to be rather outlandish in the stalkerware industry: most data OwnSpy collects is {% footnoteref "e2e-how", "decompiling the android client shows this to be true as well; the data is encrypted on-device" %}indeed end-to-end encrypted{% endfootnoteref %} and neither support staff nor any bad actors with access to OwnSpy systems can see most victim data. the one big exception is location data, which isn't encrypted in any way (despite being one of the most sensitive pieces of information available). the log also confirms that the built-in device delete feature was used in last summers hack to disconnect all devices from the service. it is not clear, however, if the pre-hack data was restored by OwnSpy.
+
+{% figure { src: "/img/posts/fuckstalkerware-5/user-portal.jpg", alt: "a screenshot of the WebDetetive stalkerware dashboard showing various pieces of redacted victim info and a heavily blurred map in the middle", caption: "even though admins have full access to customer dashboards, most data is still encrypted (we still redacted all encrypted data to ensure it can't be decrypted by anyone in the future)" } %}
+
+at this point i wanted to dive a bit deeper, since the exact connection between WebDetetive and OwnSpy still wasn't quite clear. reading through the writeup from last year again, i realized there was a mention of yet another brand name i hadnt seen before, SaferSpy. upon checking it out, both the landing page and portal are pretty much verbatim copies of those in WebDetetive but in english instead, despite being made for the brazilian market. they both even point to the same servers internally, so i was able to just sign into the admin portal with the credentials i created on WebDetetive's end, with the only difference being the customers displayed. the only other difference between the two is in who runs each service: WebDetetive's domain is registered to brazilian businessmen Roberto Duarte Fochezatto and Leonardo Duarte Costa (whose main business—besides selling stalkerware—appears to be reselling used vehicles), while SaferSpy has no names linked to it but uses a completely different domain registrar and hoster. it's pretty clear that these sites are most likely whitelabelled resellers of OwnSpy, however: they share a backend of `era3000.com`, registered in the same city as Mobile Innovations—the spanish company behind OwnSpy—and hosted via OVH's spanish branch instead of their brazilian branch.
+
+in an attempt to get some answers to my questions above, i reached out to Antonio Calatrava, the spanish CEO of Mobile Innovations. he didn't respond to my request, but when i checked the servers again a few days later, the WebDetetive and SaferSpy admin portals had been reworked to remove my access: the signup form had been removed, my account was completely deleted and the OwnSpy affiliate network portal vanished entirely from the internet, now redirecting to the OwnSpy landing page and leaving me as neither an admin nor an affiliate (for my next business idea i might start reselling used cars). and even though Calatrava didn't respond to my email (he might have been too busy with his AI podcast), im treating the super fast vulnerability fixes on both SaferSpy and WebDetetive infrastructure as further evidence that they are indeed reseller sites mostly operated by Mobile Innovations themselves.
