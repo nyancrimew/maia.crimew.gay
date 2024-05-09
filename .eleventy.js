@@ -36,7 +36,9 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(syntaxHighlight);
-  eleventyConfig.addPlugin(timeToRead);
+  eleventyConfig.addPlugin(timeToRead, {
+    speed: '250 words a minute'
+  });
   eleventyConfig.addPlugin(safeLinks);
   eleventyConfig.addPlugin(footnotes, {
     "title": "footnotes",
