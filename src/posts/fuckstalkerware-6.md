@@ -1,6 +1,7 @@
 ---
 title: "#FuckStalkerware pt. 6 - tattling on pcTattletale"
-date: 2024-05-26
+date: 2024-05-26T05:52:00+2
+changed_date: 2024-05-26T13:45:00+2
 description: spy gets hacked while spying on himself, hilarity ensues
 feature_image: /img/posts/fuckstalkerware-6/cover.jpg
 feature_alt: a glitchy edited screenshot of filezilla
@@ -60,6 +61,8 @@ besides Fleming himself, i largely ignored private use of the software, as [i ha
 
 ## the aftermath
 
-it took Fleming over 20 hours to take the defaced website offline, but the long time was not for lack of trying: *his own spyware* recorded him clumsily attempting to restore the site fairly early on but ultimately failing to do so. while pcTattletale itself has now been entirely down for a few hours, the sending of screenshots to the s3 bucket (which appears to be at least somewhat independent from the rest of the backend) continued until the aws credentials were revoked shortly before publishing this article. whether the software will be back and what the consequences for the company and Fleming could be is unclear, but the FTC has previously ordered another US stalkerware developer [to cease spyware operations entirely](https://techcrunch.com/2021/09/02/spyfone-ftc-stalkerware/) after they suffered a breach of their own. with pcTattletale's leak affecting a wide variety of companies and being significantly more egregious in its lapses in security, i would expect something similar to happen to them as well. either way, Bryan Fleming has lots to answer for and a lot of work ahead if he wants to repair his image.
+it took Fleming over 20 hours to take the defaced website offline, but the long time was not for lack of trying: *his own spyware* recorded him clumsily attempting to restore the site fairly early on but ultimately failing to do so. while pcTattletale itself has now been entirely down for a few hours, the sending of screenshots to the s3 bucket (which appears to be at least somewhat independent from the rest of the backend) continued until Flemings aws account was locked down by amazon shortly before publishing this article. whether the software will be back and what the consequences for the company and Fleming could be is unclear, but the FTC has previously ordered another US stalkerware developer [to cease spyware operations entirely](https://techcrunch.com/2021/09/02/spyfone-ftc-stalkerware/) after they suffered a breach of their own. with pcTattletale's leak affecting a wide variety of companies and being significantly more egregious in its lapses in security, i would expect something similar to happen to them as well. either way, Bryan Fleming has lots to answer for and a lot of work ahead if he wants to repair his image.
+
+*correction: an earlier version of this article falsely implied that pcTattletale aws credentials were revoked by Fleming himself, when instead his account was locked down by amazon*
 
 *if you have any data, insider info, vulnerabilities or any other tips related to stalkerware (or in general) you can securely reach out either to [me](/contact), [Zack Whitaker from TechCrunch](https://techcrunch.com/author/zack-whittaker/) or [Eric Daigle](mailto:hi@ericdaigle.ca).*
