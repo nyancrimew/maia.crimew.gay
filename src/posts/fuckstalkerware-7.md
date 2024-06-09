@@ -1,7 +1,7 @@
 ---
 title: "israeli national police found trying to purchase stalkerware - #FuckStalkerware pt. 7"
 date: 2024-06-09
-description: they're in great company with various other governments also attempting to license mSpy for intelligence use
+description: they're in pleasant company with other governments, intelligence companies, and data brokers
 feature_image: /img/posts/fuckstalkerware-7/cover.jpg
 feature_alt: a glitchy edited promo photo for mSpy
 tags:
@@ -12,7 +12,7 @@ tags:
   - leak
   - government
   - intelligence
-  - adtech
+  - data brokers
 content_warnings:
   - mentions of abuse/controlling behaviour
 ---
