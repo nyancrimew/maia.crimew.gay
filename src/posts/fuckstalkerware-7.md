@@ -1,6 +1,7 @@
 ---
 title: "israeli national police found trying to purchase stalkerware - #FuckStalkerware pt. 7"
 date: 2024-06-09
+changed_date: 2024-06-13
 description: they're in pleasant company with other governments, intelligence companies, and data brokers
 feature_image: /img/posts/fuckstalkerware-7/cover.jpg
 feature_alt: a glitchy edited promo photo for mSpy
@@ -32,3 +33,5 @@ while that's already a pretty wild lineup, that still only covers the private us
 of course government agencies arent the only ones interested in software that collects a shitton of data off personal devices—after all, that's what the entirety of the modern advertising industry is built upon. this is evidenced by emails to mSpy sent by [Shafiq Rajani](https://www.linkedin.com/in/shafiqrajani/), vice president of [Mintel](https://en.wikipedia.org/wiki/Mintel), one of the largest market research companies in the world. Rajani attempted to buy data from mSpy to analyze the ads being shown by facebook and snapchat on devices with mSpy installed. a similar request was also made by [placer.ai](https://placer.ai), a location-based market research company, who instead wanted to buy all of mSpy's device location data to then sell this data primarily to retailers such as target and walmart. in a third instance, german company [umlaut](https://de.wikipedia.org/wiki/Umlaut_(Unternehmen)) (now owned by [accenture](https://en.wikipedia.org/wiki/Accenture)) tried to buy network coverage information from mSpy to provide analytics services to telecommunications providers. once again, i could not find any indication that mSpy actually sold any data to any of these companies; however, some of them claimed to already be working with companies similar to mSpy. this raises a lot of legal and privacy concerns, especially considering a significant portion of the data these companies were interested in buying would have been collected without consent or from devices owned by minors.
 
 *if you have any data, insider info, vulnerabilities or any other tips related to stalkerware (or in general) you can securely [reach out to me](/contact), the same goes for any journalists wanting to do secondary reporting on this data.*
+
+*update: the data this reporting is based on is now available [via DDoSecrets](https://ddosecrets.com/wiki/MSpy) for secondary reporting, journalists interested in reproducing my research or comments from me can [reach out to me](/contact)*
