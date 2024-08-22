@@ -1,6 +1,7 @@
 ---
 title: stardom dreams, stalking devices and the secret conglomerate selling both
 date: 2024-08-15
+changed_date: 2024-08-22
 description: '"this is all so stupid," maia keeps repeating'
 feature_image: /img/posts/gps-track-deez-nuts/cover.jpg
 feature_caption: feature art by [fourleafisland](https://fourleafisland.carrd.co/)
@@ -32,7 +33,7 @@ half a year into our investigation, we'd found it all: a hidden conglomerate pos
 
 ## starting our descent
 
-Tracki's website is littered with stock illustrations of gps pins and reviews praising it for its reliability and customer service. they tout their popularity on sites like amazon, comparing their seemingly superior specs and prices to those of similar gps trackers. but a bit of googling will have you run into blog posts on their site discussing [stalkerware](/posts/tagged/fuckstalkerware) (as well as [how to get rid of it](https://archive.is/BjpMx)) and explicitly marketing Tracki as a device for [spying on a spouse or other family member](https://archive.is/1ZpcA), even providing [detailed instructions for attaching it to their car](https://archive.is/47oeF). and with further prodding, it's also quite easy to [make the connection](https://archive.is/8IdyM) from Tracki to its parent company, Trackimo (registered in israel as [`VESTIGO TECHNOLOGIES LTD`](https://opencorporates.com/companies/il/514985985)), with Tracki being their more consumer-focused brand and Trackimo, who does the actual product development, focusing on business applications. having sent a local contact to check, we are able to confirm that Vestigo has an office space located in central tel aviv, housing most of their in-house R&D, management and software development employees.
+Tracki's website is littered with stock illustrations of gps pins and reviews praising it for its reliability and customer service. they tout their popularity on sites like amazon, comparing their seemingly superior specs and prices to those of similar gps trackers. but a bit of googling will have you run into blog posts on their site discussing [stalkerware](/posts/tagged/fuckstalkerware) (as well as [how to get rid of it](https://archive.is/BjpMx)) and explicitly marketing Tracki as a device for [spying on a spouse or other family member](https://archive.is/1ZpcA), even providing [detailed instructions for attaching it to their car](https://archive.is/47oeF). and with further prodding, it's also quite easy to [make the connection](https://archive.is/8IdyM) from Tracki to its parent company, Trackimo (registered in israel as [`VESTIGO TECHNOLOGIES LTD`](https://opencorporates.com/companies/il/514985985)), with Tracki being their more consumer-focused brand and Trackimo, who does the actual product development, focusing on business applications. despite this connection, however, Trackimo chief operating officer Amit Shaked confirmed to us that Tracki operates largely independently of Trackimo. having sent a local contact to check, we are able to confirm that Vestigo has an office space located in central tel aviv, housing most of their in-house R&D, management and software development employees.
 
 {% figure { src: '/img/posts/gps-track-deez-nuts/vestigo-parking.jpg', alt: 'a photo from inside a parking space facing out toward a street. the parking spot is labelled with a messily hung piece of paper with "Vestigo" printed on it in calibri font. in the background there is a cat sitting under a car', caption: 'Vestigo\'s luxurious parking lot at their tel aviv office. the cat pictured may not be our local contact but is definitely running some important anarchist operations' } %}
 
@@ -177,3 +178,5 @@ all security vulnerabilities mentioned in this article were reported to Tracki a
 we further reached out to dozens of both current and former {% footnoteref "mentioned-in-piece", "all of those mentioned in this piece were contacted" %}employees and executives within the companies for direct comment, but received no response from any.{% endfootnoteref %}
 
 Quintin made the danger of these security lapses in Tracki and Trackimo's services clear. "This is one of the most horrifying examples of stalking technology I have ever seen", he wrote. "Trackimo should be investigated by the FTC and shut down immediately for their complicity in so many horrendous crimes."
+
+_**Update 08/22/2024:** a sentence was added to clarify the relationship between Tracki and Trackimo, based on information provided to us by Amit Shaked (COO of Trackimo)_
