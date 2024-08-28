@@ -12,6 +12,7 @@ function oneko() {
   let nekoPosY = getRandomInt(32, window.innerHeight - 63);
   let mousePosX = nekoPosX - 32;
   let mousePosY = nekoPosY - 32;
+  let mouseButtonDown = false;
   let frameCount = 0;
   let idleTime = 0;
   let idleAnimation = null;
@@ -78,6 +79,12 @@ function oneko() {
       [-1, 0],
       [-1, -1],
     ],
+    heart: [
+      [-8, 0],
+      [-8, -1],
+      [-8, -2],
+      [-8, -3],
+    ],
   };
 
   function create() {
@@ -97,8 +104,15 @@ function oneko() {
       mousePosX = event.clientX;
       mousePosY = event.clientY;
     };
+    document.addEventListener("mousedown", toggleMouseState);
+    document.addEventListener("mouseup", toggleMouseState);
 
     window.onekoInterval = setInterval(frame, 100);
+  }
+
+  function toggleMouseState(e) {
+    var flags = e.buttons !== undefined ? e.buttons : e.which;
+    mouseButtonDown = (flags & 1) === 1;
   }
 
   function setSprite(name, frame) {
@@ -111,7 +125,7 @@ function oneko() {
     idleAnimationFrame = 0;
   }
 
-  function idle() {
+  function idle(diffX, diffY) {
     idleTime += 1;
 
     // every ~ 20 seconds
@@ -141,7 +155,14 @@ function oneko() {
           setSprite("tired", 0);
           break;
         }
-        setSprite("sleeping", Math.floor(idleAnimationFrame / 4));
+
+        // check diffs to ensure pointer is on sprite
+        if (mouseButtonDown && diffY < 8 && diffY > -18 && diffX < 18 && diffX > -18) {
+          setSprite("heart", Math.floor(idleAnimationFrame / 4));
+        } else {
+          setSprite("sleeping", Math.floor(idleAnimationFrame / 4));
+        }
+
         if (idleAnimationFrame > 192) {
           resetIdleAnimation();
         }
@@ -170,7 +191,7 @@ function oneko() {
     const distance = Math.sqrt(diffX ** 2 + diffY ** 2);
 
     if (distance < nekoSpeed || distance < 48) {
-      idle();
+      idle(diffX, diffY);
       return;
     }
 
