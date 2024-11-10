@@ -13,7 +13,7 @@
     </div>
     <div class="badges">
         {% for item in footer.badges %}
-            {% if item.link %}<a href="{{ item.link }}" target="_blank">{% endif %}<img src="/badges/{{ item.badge }}" alt="{{ item.alt }}" {% if item.title %}title="{{ item.title }}"{% endif %}>{% if item.link %}</a>{% endif %}
+            {% if item.link %}<a href="{{ item.link }}" target="_blank">{% endif %}<img src="/badges/{{ item.badge }}" {% if item.onclick %}onclick="{{ item.onclick }}"{% endif %} alt="{{ item.alt }}" {% if item.title %}title="{{ item.title }}"{% endif %}>{% if item.link %}</a>{% endif %}
         {% endfor %}
     </div>
     <script src="https://sleepy.zone/webring/webring-{{ site.sleepyWebring.version }}.js" data-site-id="{{ site.sleepyWebring.siteId }}"></script>
