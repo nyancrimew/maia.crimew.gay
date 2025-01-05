@@ -7,6 +7,7 @@ coauthor:
   name: ryan fae
   link: https://bsky.app/profile/ryan.staticnoi.se
 tags:
+  - osint
   - analysis
   - politics
 ---
@@ -28,7 +29,7 @@ The IP address was roughly geolocated to Fiji, and the email gave us more to wor
 
 Of course, at this point, we didn't know if this was the same Adrian Dittmann as the one on X. We kept in mind his face, location, and a few extra clues dug up using the tool *osint.industries*, including two phone number hints in Fiji (+679) and Germany (+49) connected to the aforefound email address.
 
-![A screenshot of a UI showing two heavily redacted online accounts, one for paypal and one for samsung, both of them have a linked phone number, one of which starts with +49 (germany) and the other of which starts with +679 (fiji)](/img/posts/adrian-dittmann/osintindustries.png])
+![A screenshot of a UI showing two heavily redacted online accounts, one for paypal and one for samsung, both of them have a linked phone number, one of which starts with +49 (germany) and the other of which starts with +679 (fiji)](/img/posts/adrian-dittmann/osintindustries.png)
 
 A search of the @AdrianDittmann X account shows correlative evidence: the account operator claimed in June 2023 to be German ([link](https://archive.is/piY5B), left in below video), and he claimed in July 2023 to have grown up in Gibraltar and to have lived in Morocco but to currently reside in Oceania ([link](https://x.com/TO/status/1685141865274757120) via Trevor Owens, right in below video).
 
