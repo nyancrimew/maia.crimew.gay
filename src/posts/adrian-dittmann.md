@@ -2,6 +2,7 @@
 title: The Adrian Dittmann Story
 description: the evidence, from A to Z, and righting the wrongs
 date: 2025-01-05
+date_changed: 2025-01-05T20:45:00+2
 feature_image: /img/posts/adrian-dittmann/cover.jpg
 coauthor:
   name: ryan fae
@@ -90,3 +91,7 @@ According to Jackie, *The Spectator* decided to remove the line describing our c
 In short, we don't think the article is very good, and we're unhappy with how our work was used without credit. But despite not being proud of the piece, maia's posts remain up (as does ryan's [statement](https://bsky.app/profile/did:plc:lb5rzms2ky5fmp6clthjwuvx/post/3lewpsney6s2n)): we believe that credit is a crucial part of journalism and research as a whole, and if by leveraging popularity around the article's release is the only way to bring attention to that, so be it.
 
 *If you have any additions to this story, please text ryan on Signal at `rhinozz.1337`.*
+
+## Update January 5 19:45 UTC
+
+11 hours after publishing this piece, links to it and the original Spectator piece were [blocked](https://x.com/Mxynyx/status/1875990544939446320), and at least the X accounts of maia, ryan, and Jackie were [suspended for 30 days](https://bsky.app/profile/crimew.gay/post/3leze4ovjes2c). No rule was cited for the suspension.
