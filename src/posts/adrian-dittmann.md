@@ -80,7 +80,7 @@ And yes, tracing back up the corporate ladder, there is: Aquam Insula, the afore
 
 ![a collection of three screenshots with arrows connecting them. the first one is from the aquam insula and shows a single sentence "aquam insula pte ltd, a proud subsidiary of totoka islands ltd" the next screenshot shows the totoka islands website with a single sentence "totoka island's sister company FRAMESOFT (FIJI) LTD" on the right is an excerpt of one of the framesoft company registrations showing the correspondence address for its director at a location in gibraltar](/img/posts/adrian-dittmann/gibraltar.png)
 
-Per the above, we're certain that Adrian Dittmann is from Fiji and not Elon Musk. Multiple subjects mentioned in this piece were contacted for comment by both us and Jackie, but all either refused to speak on the record and ignored us entirely.
+Per the above, we're certain that Adrian Dittmann is from Fiji and not Elon Musk. Multiple subjects mentioned in this piece were contacted for comment by both us and Jackie, but all either refused to speak on the record or ignored us entirely.
 ## How publication went down
 With Jackie responsible for writing and pitching, she decided to go with *The Spectator*'s US branch as her publication of choice, and we naively went along with it. A part of the conditions from the start was that we would get "appropriate credit" for our work on this piece, even outside of the byline.
 
