@@ -2,7 +2,7 @@
 title: The Adrian Dittmann Story
 description: the evidence, from A to Z, and righting the wrongs
 date: 2025-01-05
-changed_date: 2025-01-05T20:45:00+2
+changed_date: 2025-01-05T20:45:00+1
 feature_image: /img/posts/adrian-dittmann/cover.jpg
 coauthor:
   name: ryan fae
