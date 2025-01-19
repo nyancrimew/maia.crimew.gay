@@ -164,6 +164,11 @@
       "badge": "adryd.png",
       "alt": "adryd",
       "link": "https://adryd.com"
+    },
+    {
+      "badge": "notnite.png",
+      "alt": "notnite",
+      "link": "https://notnite.com"
     }
   ]
 }
