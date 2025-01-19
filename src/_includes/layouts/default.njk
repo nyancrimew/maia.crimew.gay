@@ -28,8 +28,8 @@
     <link rel="shortcut icon" href="/favicon.ico">
 
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-    {% if env.environment.isProd %}
-      <script async src="https://umami.crimew.gay/script.js" data-website-id="fa7a72e7-acbc-488d-beb2-213886be0262"></script>
+    {% if env.environment.isProd and site.analytics.enabled %}
+      <script async src="https://{{ site.analytics.host }}/script.js" data-website-id="{{ site.analytics.website_id }}"></script>
     {% endif %}
   </head>
   <body>

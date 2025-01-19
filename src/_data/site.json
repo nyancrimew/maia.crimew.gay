@@ -1,5 +1,10 @@
 {
     "url": "https://maia.crimew.gay",
+    "analytics": {
+      "enabled": true,
+      "host": "umami.crimew.gay",
+      "website_id": "fa7a72e7-acbc-488d-beb2-213886be0262"
+    },
     "title": "maia :3",
     "description": "meow",
     "tags": [
