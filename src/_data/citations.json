@@ -9,6 +9,14 @@
         "doi": "https://doi.org/10.17760/D20618644"
     },
     {
+        "title": "A primer to the nuances of authorisation, authentication, and identification",
+        "authors": "Enka Blanchard, Mehdi Bouhamidi, Jörg Pohle",
+        "year": "2024",
+        "publisher": "Preprint of a chapter of L’identité numérique en construction. Quels enjeux et quels modèles ? (eds. J. Eynard and G. Macilotti), Larcier Intersentia ",
+        "link": "https://www.koliaza.com/publication/blanchard-2024-authorisation/",
+        "pdf": "https://www.koliaza.com/publication/blanchard-2024-authorisation/blanchard-2024-authorisation.pdf"
+    },
+    {
         "title": "Singular Purpose: Calculating the Degree of Ethno-Religious Over-representation in the US No-Fly List",
         "authors": "Matteo Garofalo",
         "year": "2024",
@@ -23,5 +31,23 @@
         "year": "2024",
         "publisher": "Limmat Verlag",
         "link": "https://www.limmatverlag.ch/programm/titel/964-niemals-aus-liebe.html"
+    },
+    {
+        "title": "De-composition",
+        "authors": "Daniel Falagán",
+        "year": "2025",
+        "publisher": "California State University, Northridge",
+        "doi": "http://hdl.handle.net/20.500.12680/sf268f46d",
+        "link": "https://scholarworks.calstate.edu/concern/theses/sf268f46d",
+        "pdf":"https://scholarworks.calstate.edu/downloads/7m01bw13s"
+    },
+    {
+        "title": "fbi Most Wanted Girlfriend: The Futurist Model of Fugitive Trans Hacker and Merchandiser Maia Arson Crimew’s Meaning Making",
+        "authors": "Tim Pappa",
+        "year": "2025",
+        "publisher": "International Conference on Cyber Warfare and Security",
+        "doi": "https://doi.org/10.34190/iccws.20.1.3196",
+        "link": "https://papers.academic-conferences.org/index.php/iccws/article/view/3196",
+        "pdf":"https://papers.academic-conferences.org/index.php/iccws/article/view/3196/2991"
     }
 ]
